@@ -1,0 +1,1000 @@
+{"instruction": "¿Cómo funciona FAISS dentro del tutor?", "response": "FAISS permite realizar búsqueda semántica rápida sobre los embeddings generados a partir de los documentos del corpus."}
+{"instruction": "¿Qué hace el sistema RAG?", "response": "El sistema RAG recupera fragmentos relevantes desde documentos y posteriormente genera respuestas usando esa evidencia."}
+{"instruction": "¿Qué son los embeddings?", "response": "Los embeddings son representaciones numéricas del texto que permiten comparar significado semántico entre fragmentos."}
+{"instruction": "¿Para qué sirve Fine-Tuning en el tutor?", "response": "Fine-Tuning ajusta el comportamiento del modelo para responder con tono académico y reducir respuestas incorrectas."}
+{"instruction": "¿Cómo evita el tutor inventar respuestas?", "response": "El tutor recupera evidencia documental mediante FAISS y limita sus respuestas a la información encontrada en el corpus."}
+{"instruction": "¿Qué tecnología usa el sistema para recuperación semántica?", "response": "El sistema utiliza FAISS junto con embeddings de SentenceTransformers para recuperación semántica."}
+{"instruction": "¿Qué hace LoRA en el proyecto?", "response": "LoRA permite ajustar el comportamiento del modelo sin reentrenarlo completamente."}
+{"instruction": "¿Qué función tiene LangChain?", "response": "LangChain integra el pipeline RAG y conecta embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Qué modelo utiliza el tutor?", "response": "El tutor utiliza TinyLlama ajustado mediante LoRA para responder preguntas académicas."}
+{"instruction": "¿Qué diferencia existe entre RAG y Fine-Tuning?", "response": "RAG recupera información desde documentos externos mientras Fine-Tuning modifica el comportamiento del modelo."}
+{"instruction": "¿Cómo ayuda FAISS a reducir alucinaciones?", "response": "FAISS permite recuperar evidencia relevante antes de responder, reduciendo respuestas inventadas."}
+{"instruction": "¿Qué sucede si el corpus no contiene información suficiente?", "response": "El tutor indica que no existe evidencia suficiente en lugar de inventar datos."}
+{"instruction": "¿Qué instituciones aparecen en el corpus?", "response": "En el corpus aparecen instituciones como INEGI, ENVIPE, ENSU y el Observatorio Nacional Ciudadano."}
+{"instruction": "¿Qué documentos hablan sobre homicidios?", "response": "El corpus contiene documentos relacionados con homicidios como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Qué fuentes gubernamentales utiliza el tutor?", "response": "El tutor utiliza principalmente documentos del INEGI y reportes estadísticos oficiales."}
+{"instruction": "¿Qué documentos pertenecen al INEGI?", "response": "Los documentos relacionados con INEGI incluyen reportes ENVIPE, ENSU y estadísticas de homicidios."}
+{"instruction": "¿Qué significa cifra negra?", "response": "La cifra negra representa delitos que no son denunciados ni registrados oficialmente."}
+{"instruction": "¿Qué limita medir correctamente la violencia?", "response": "Las principales limitaciones son el subregistro, la cifra negra y diferencias metodológicas entre instituciones."}
+{"instruction": "¿Qué son las encuestas de victimización?", "response": "Las encuestas de victimización recopilan información sobre delitos sufridos aunque no hayan sido denunciados."}
+{"instruction": "¿Qué diferencia existe entre registros oficiales y victimización?", "response": "Los registros oficiales dependen de denuncias mientras las encuestas de victimización capturan delitos no denunciados."}
+{"instruction": "¿Qué estados presentan mayores niveles de homicidio?", "response": "Los documentos recuperados señalan frecuentemente a Colima, Guanajuato y Baja California."}
+{"instruction": "¿Qué factores influyen en la violencia urbana?", "response": "Factores como desigualdad, impunidad, crimen organizado y debilidad institucional influyen en la violencia urbana."}
+{"instruction": "¿Qué es recuperación semántica?", "response": "La recuperación semántica busca fragmentos relacionados por significado y no solo por coincidencia exacta de palabras."}
+{"instruction": "¿Qué hace el vector DB?", "response": "La base vectorial almacena embeddings para permitir búsquedas semánticas rápidas."}
+{"instruction": "¿Qué hace similarity_search?", "response": "similarity_search recupera los fragmentos más cercanos semánticamente a la pregunta."}
+{"instruction": "¿Qué son los chunks?", "response": "Los chunks son fragmentos pequeños de texto usados para recuperación semántica."}
+{"instruction": "¿Por qué se dividen documentos en chunks?", "response": "Dividir documentos mejora la precisión de recuperación y evita enviar textos demasiado grandes."}
+{"instruction": "¿Qué hace SentenceTransformers?", "response": "SentenceTransformers genera embeddings semánticos para representar texto numéricamente."}
+{"instruction": "¿Qué es una alucinación en IA?", "response": "Una alucinación ocurre cuando un modelo genera información falsa o no respaldada."}
+{"instruction": "¿Cómo detecta el tutor preguntas peligrosas?", "response": "El sistema utiliza reglas para identificar preguntas políticas, predictivas o sin evidencia verificable."}
+{"instruction": "¿Qué preguntas rechaza el tutor?", "response": "El tutor rechaza preguntas que requieren atribución política, predicciones o información no documentada."}
+{"instruction": "¿Qué documentos hablan sobre extorsión?", "response": "Los reportes ONC y documentos ENVIPE contienen información relacionada con extorsión."}
+{"instruction": "¿Qué reportes usa el Observatorio Nacional Ciudadano?", "response": "El corpus incluye reportes trimestrales y anuales del Observatorio Nacional Ciudadano."}
+{"instruction": "¿Qué es ENVIPE?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Qué es ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Qué es el corpus documental?", "response": "El corpus documental es el conjunto de PDFs utilizados por el tutor para responder preguntas."}
+{"instruction": "¿Qué ventaja tiene RAG sobre solo Fine-Tuning?", "response": "RAG permite actualizar información mediante documentos sin reentrenar completamente el modelo."}
+{"instruction": "¿Qué limitaciones tiene FAISS?", "response": "FAISS depende de la calidad de embeddings y puede recuperar fragmentos parcialmente relacionados."}
+{"instruction": "¿Por qué puede equivocarse el tutor?", "response": "El tutor puede equivocarse si el corpus no contiene suficiente evidencia o si la recuperación semántica falla."}
+{"instruction": "¿Cómo responde el tutor preguntas híbridas?", "response": "El sistema combina información técnica y documentos recuperados para responder preguntas híbridas."}
+{"instruction": "¿Qué son las métricas del tutor?", "response": "Las métricas muestran latencia, chunks recuperados y rendimiento del sistema."}
+{"instruction": "¿Qué indica chunks_relevantes?", "response": "chunks_relevantes representa cuántos fragmentos recuperados coincidieron con la consulta."}
+{"instruction": "¿Qué indica latencia_total_seg?", "response": "latencia_total_seg representa el tiempo total utilizado para generar la respuesta."}
+{"instruction": "¿Cómo ayuda LoRA a optimizar recursos?", "response": "LoRA reduce memoria y tiempo de entrenamiento ajustando pocas capas del modelo."}
+{"instruction": "¿Qué diferencia existe entre búsqueda léxica y semántica?", "response": "La búsqueda léxica depende de palabras exactas mientras la semántica compara significado."}
+{"instruction": "¿Qué son vectores semánticos?", "response": "Son representaciones numéricas que capturan el significado del texto."}
+{"instruction": "¿Qué hace el router del tutor?", "response": "El router clasifica preguntas para decidir si usar reglas, corpus o rechazo de seguridad."}
+{"instruction": "¿Qué tipos de preguntas reconoce el tutor?", "response": "El tutor reconoce preguntas técnicas, documentales, híbridas y riesgosas."}
+{"instruction": "¿Qué es retrieval?", "response": "Retrieval es el proceso de recuperar información relevante desde el corpus."}
+{"instruction": "¿Qué hace el pipeline RAG?", "response": "El pipeline RAG recupera evidencia, filtra chunks y genera una respuesta contextual."}
+{"instruction": "¿Cómo responde el tutor preguntas sobre homicidios?", "response": "El tutor utiliza documentos relacionados con homicidios y estadísticas oficiales recuperadas semánticamente."}
+{"instruction": "¿Cómo responde preguntas sobre violencia?", "response": "El tutor analiza fragmentos recuperados y responde usando únicamente evidencia documental."}
+{"instruction": "¿Qué hace el procesamiento previo del texto?", "response": "El preprocesamiento limpia texto y mejora la generación de embeddings."}
+{"instruction": "¿Qué significa top_k?", "response": "top_k indica cuántos fragmentos relevantes recupera FAISS."}
+{"instruction": "¿Qué sucede si no hay chunks relevantes?", "response": "El tutor informa que no encontró evidencia suficiente en el corpus."}
+{"instruction": "¿Qué es una base vectorial?", "response": "Una base vectorial almacena embeddings para búsqueda semántica eficiente."}
+{"instruction": "¿Qué es similarity score?", "response": "Similarity score mide qué tan relacionado está un fragmento con la pregunta."}
+{"instruction": "¿Cómo se entrenó el tutor?", "response": "El tutor fue ajustado mediante Fine-Tuning usando instrucciones académicas relacionadas con RAG y seguridad."}
+{"instruction": "¿Qué hace TinyLlama en el sistema?", "response": "TinyLlama genera respuestas académicas utilizando evidencia recuperada."}
+{"instruction": "¿Qué es una respuesta académica?", "response": "Es una respuesta objetiva, neutral y basada en evidencia documental."}
+{"instruction": "¿Cómo maneja incertidumbre el tutor?", "response": "El tutor reconoce límites del corpus y evita afirmar información no documentada."}
+{"instruction": "¿Qué documentos hablan sobre victimización?", "response": "Los documentos ENVIPE contienen información relacionada con victimización."}
+{"instruction": "¿Qué problemas existen en estadísticas delictivas?", "response": "Existen subregistro, diferencias metodológicas y cifra negra."}
+{"instruction": "¿Qué relación existe entre violencia y desigualdad?", "response": "Los documentos relacionan violencia con desigualdad y debilidad institucional."}
+{"instruction": "¿Qué es chunking?", "response": "Chunking divide documentos grandes en fragmentos más pequeños para recuperación semántica."}
+{"instruction": "¿Por qué chunking mejora el sistema?", "response": "Chunking permite recuperar información más específica y relevante."}
+{"instruction": "¿Qué significa recuperación contextual?", "response": "Significa recuperar información relevante según el contexto de la pregunta."}
+{"instruction": "¿Cómo ayuda el corpus al tutor?", "response": "El corpus proporciona evidencia documental para construir respuestas fundamentadas."}
+{"instruction": "¿Qué diferencia existe entre IA generativa y RAG?", "response": "La IA generativa produce texto mientras RAG agrega recuperación documental antes de responder."}
+{"instruction": "¿Qué hace el filtrado de keywords?", "response": "El filtrado de keywords ayuda a identificar fragmentos relacionados con la consulta."}
+{"instruction": "¿Qué información contienen los PDFs?", "response": "Los PDFs contienen estadísticas, análisis y reportes sobre seguridad y violencia en México."}
+{"instruction": "¿Qué es una consulta híbrida?", "response": "Una consulta híbrida mezcla preguntas técnicas y preguntas sobre documentos."}
+{"instruction": "¿Qué ventajas tiene usar PDFs oficiales?", "response": "Los PDFs oficiales aportan evidencia verificable y reducen alucinaciones."}
+{"instruction": "¿Qué hace la búsqueda semántica en español?", "response": "Permite encontrar información relacionada aunque las palabras no coincidan exactamente."}
+{"instruction": "¿Qué diferencia existe entre embeddings y keywords?", "response": "Embeddings representan significado mientras keywords dependen de coincidencias textuales."}
+{"instruction": "¿Qué hace el rechazo por riesgo?", "response": "Impide responder preguntas sin evidencia suficiente o potencialmente engañosas."}
+{"instruction": "¿Cómo responde el tutor preguntas políticas?", "response": "El tutor evita conclusiones políticas cuando el corpus no contiene evidencia suficiente."}
+{"instruction": "¿Qué hace el sistema cuando encuentra evidencia parcial?", "response": "El tutor responde parcialmente y reconoce limitaciones de información."}
+{"instruction": "¿Qué hace el sistema antes de responder?", "response": "Primero clasifica la pregunta, recupera evidencia y después formula la respuesta."}
+{"instruction": "¿Qué significa evidencia documental?", "response": "Es información recuperada directamente desde documentos del corpus."}
+{"instruction": "¿Qué diferencia existe entre evidencia y opinión?", "response": "La evidencia está respaldada por documentos mientras la opinión no necesariamente."}
+{"instruction": "¿Qué tipo de corpus usa el tutor?", "response": "El tutor utiliza un corpus documental compuesto por PDFs académicos y gubernamentales."}
+{"instruction": "¿Qué es recuperación aumentada?", "response": "Es una técnica donde la IA utiliza documentos externos antes de responder."}
+{"instruction": "¿Qué documentos hablan sobre seguridad pública?", "response": "Los documentos ENSU, ENVIPE y ONC contienen información sobre seguridad pública."}
+{"instruction": "¿Cómo afecta el subregistro al análisis delictivo?", "response": "El subregistro dificulta medir correctamente la magnitud real de los delitos."}
+{"instruction": "¿Qué hace el análisis semántico?", "response": "El análisis semántico identifica relaciones de significado entre textos."}
+{"instruction": "¿Cómo ayuda la IA al análisis de violencia?", "response": "La IA permite organizar, recuperar y resumir evidencia documental de forma eficiente."}
+{"instruction": "¿Qué es una consulta documental?", "response": "Es una pregunta enfocada en información contenida dentro del corpus."}
+{"instruction": "¿Qué es una consulta técnica?", "response": "Es una pregunta relacionada con tecnologías o funcionamiento del sistema."}
+{"instruction": "¿Qué hace el sistema si una pregunta es ambigua?", "response": "El tutor responde únicamente con la evidencia claramente relacionada."}
+{"instruction": "¿Qué hace el tutor con preguntas predictivas?", "response": "El tutor evita realizar predicciones sin evidencia verificable."}
+{"instruction": "¿Qué es una respuesta parcial?", "response": "Es una respuesta limitada únicamente a la evidencia encontrada."}
+{"instruction": "¿Qué ventaja tiene usar embeddings multilingües?", "response": "Permiten recuperación semántica eficiente en español y otros idiomas."}
+{"instruction": "¿Qué hace la limpieza de texto?", "response": "La limpieza elimina ruido y mejora la calidad de embeddings."}
+{"instruction": "¿Qué diferencia existe entre entrenamiento y recuperación?", "response": "Entrenamiento ajusta el modelo mientras recuperación obtiene evidencia documental."}
+{"instruction": "¿Qué hace el tutor cuando detecta poca evidencia?", "response": "El tutor reconoce la limitación y evita inventar información."}
+{"instruction": "¿Qué importancia tiene la neutralidad académica?", "response": "La neutralidad evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Qué función tienen los PDFs dentro del sistema?", "response": "Los PDFs funcionan como fuente principal de evidencia documental."}
+{"instruction": "¿Qué es retrieval augmented generation?", "response": "Es una técnica que combina recuperación documental y generación de respuestas."}
+{"instruction": "¿Cómo mejora RAG la precisión?", "response": "RAG mejora precisión usando evidencia recuperada antes de responder."}
+{"instruction": "¿Qué hace el tutor con preguntas fuera del corpus?", "response": "El tutor informa que no existe evidencia suficiente en los documentos disponibles."}
+{"instruction": "¿Qué documentos hablan sobre delitos de alto impacto?", "response": "Los reportes ONC contienen análisis sobre delitos de alto impacto."}
+{"instruction": "¿Qué hace el sistema cuando una pregunta mezcla temas?", "response": "El tutor intenta combinar recuperación documental y reglas técnicas para responder correctamente."}
+{"instruction": "¿Qué significa chunks_recuperados?", "response": "Indica cuántos fragmentos fueron recuperados desde FAISS."}
+{"instruction": "¿Qué diferencia existe entre chunk y documento completo?", "response": "Un chunk es un fragmento pequeño de un documento completo."}
+{"instruction": "¿Qué ventaja tiene usar FAISS localmente?", "response": "Permite recuperación rápida sin depender de servicios externos."}
+{"instruction": "¿Cómo se relacionan embeddings y FAISS?", "response": "FAISS utiliza embeddings para comparar significado entre preguntas y documentos."}
+{"instruction": "¿Qué es FAISS dentro del tutor?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Para qué sirve FAISS en el sistema?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Qué función cumple FAISS?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Cómo ayuda FAISS al tutor?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Por qué es importante FAISS?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Cómo se usa FAISS en el proyecto?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "Explica brevemente FAISS.", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "Define FAISS en el contexto del tutor.", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Qué papel tiene FAISS en el tutor?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Qué significa FAISS?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Cómo se relaciona FAISS con el proyecto?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Qué debe responder el tutor sobre FAISS?", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "¿Qué es RAG dentro del tutor?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Para qué sirve RAG en el sistema?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Qué función cumple RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Cómo ayuda RAG al tutor?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Por qué es importante RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Cómo se usa RAG en el proyecto?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "Explica brevemente RAG.", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "Define RAG en el contexto del tutor.", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Qué papel tiene RAG en el tutor?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Qué significa RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Cómo se relaciona RAG con el proyecto?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Qué debe responder el tutor sobre RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "¿Qué es embeddings dentro del tutor?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Para qué sirve embeddings en el sistema?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Qué función cumple embeddings?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Cómo ayuda embeddings al tutor?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Por qué es importante embeddings?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Cómo se usa embeddings en el proyecto?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "Explica brevemente embeddings.", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "Define embeddings en el contexto del tutor.", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Qué papel tiene embeddings en el tutor?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Qué significa embeddings?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Cómo se relaciona embeddings con el proyecto?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Qué debe responder el tutor sobre embeddings?", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "¿Qué es SentenceTransformers dentro del tutor?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Para qué sirve SentenceTransformers en el sistema?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Qué función cumple SentenceTransformers?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Cómo ayuda SentenceTransformers al tutor?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Por qué es importante SentenceTransformers?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Cómo se usa SentenceTransformers en el proyecto?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "Explica brevemente SentenceTransformers.", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "Define SentenceTransformers en el contexto del tutor.", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Qué papel tiene SentenceTransformers en el tutor?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Qué significa SentenceTransformers?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Cómo se relaciona SentenceTransformers con el proyecto?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Qué debe responder el tutor sobre SentenceTransformers?", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "¿Qué es chunks dentro del tutor?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Para qué sirve chunks en el sistema?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Qué función cumple chunks?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Cómo ayuda chunks al tutor?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Por qué es importante chunks?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Cómo se usa chunks en el proyecto?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "Explica brevemente chunks.", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "Define chunks en el contexto del tutor.", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Qué papel tiene chunks en el tutor?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Qué significa chunks?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Cómo se relaciona chunks con el proyecto?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Qué debe responder el tutor sobre chunks?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "¿Qué es chunking dentro del tutor?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Para qué sirve chunking en el sistema?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Qué función cumple chunking?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Cómo ayuda chunking al tutor?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Por qué es importante chunking?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Cómo se usa chunking en el proyecto?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "Explica brevemente chunking.", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "Define chunking en el contexto del tutor.", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Qué papel tiene chunking en el tutor?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Qué significa chunking?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Cómo se relaciona chunking con el proyecto?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Qué debe responder el tutor sobre chunking?", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "¿Qué es TinyLlama dentro del tutor?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Para qué sirve TinyLlama en el sistema?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Qué función cumple TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Cómo ayuda TinyLlama al tutor?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Por qué es importante TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Cómo se usa TinyLlama en el proyecto?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "Explica brevemente TinyLlama.", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "Define TinyLlama en el contexto del tutor.", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Qué papel tiene TinyLlama en el tutor?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Qué significa TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Cómo se relaciona TinyLlama con el proyecto?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Qué debe responder el tutor sobre TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "¿Qué es LoRA dentro del tutor?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Para qué sirve LoRA en el sistema?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Qué función cumple LoRA?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Cómo ayuda LoRA al tutor?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Por qué es importante LoRA?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Cómo se usa LoRA en el proyecto?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "Explica brevemente LoRA.", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "Define LoRA en el contexto del tutor.", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Qué papel tiene LoRA en el tutor?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Qué significa LoRA?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Cómo se relaciona LoRA con el proyecto?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Qué debe responder el tutor sobre LoRA?", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "¿Qué es Fine-Tuning dentro del tutor?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Para qué sirve Fine-Tuning en el sistema?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Qué función cumple Fine-Tuning?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Cómo ayuda Fine-Tuning al tutor?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Por qué es importante Fine-Tuning?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Cómo se usa Fine-Tuning en el proyecto?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "Explica brevemente Fine-Tuning.", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "Define Fine-Tuning en el contexto del tutor.", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Qué papel tiene Fine-Tuning en el tutor?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Qué significa Fine-Tuning?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Cómo se relaciona Fine-Tuning con el proyecto?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Qué debe responder el tutor sobre Fine-Tuning?", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "¿Qué es LangChain dentro del tutor?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Para qué sirve LangChain en el sistema?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Qué función cumple LangChain?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Cómo ayuda LangChain al tutor?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Por qué es importante LangChain?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Cómo se usa LangChain en el proyecto?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "Explica brevemente LangChain.", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "Define LangChain en el contexto del tutor.", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Qué papel tiene LangChain en el tutor?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Qué significa LangChain?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Cómo se relaciona LangChain con el proyecto?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Qué debe responder el tutor sobre LangChain?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "¿Qué es corpus dentro del tutor?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Para qué sirve corpus en el sistema?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Qué función cumple corpus?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Cómo ayuda corpus al tutor?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Por qué es importante corpus?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Cómo se usa corpus en el proyecto?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "Explica brevemente corpus.", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "Define corpus en el contexto del tutor.", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Qué papel tiene corpus en el tutor?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Qué significa corpus?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Cómo se relaciona corpus con el proyecto?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Qué debe responder el tutor sobre corpus?", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "¿Qué es PDFs dentro del tutor?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Para qué sirve PDFs en el sistema?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Qué función cumple PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Cómo ayuda PDFs al tutor?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Por qué es importante PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Cómo se usa PDFs en el proyecto?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "Explica brevemente PDFs.", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "Define PDFs en el contexto del tutor.", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Qué papel tiene PDFs en el tutor?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Qué significa PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Cómo se relaciona PDFs con el proyecto?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Qué debe responder el tutor sobre PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "¿Qué es similarity_search dentro del tutor?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Para qué sirve similarity_search en el sistema?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Qué función cumple similarity_search?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Cómo ayuda similarity_search al tutor?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Por qué es importante similarity_search?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Cómo se usa similarity_search en el proyecto?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "Explica brevemente similarity_search.", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "Define similarity_search en el contexto del tutor.", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Qué papel tiene similarity_search en el tutor?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Qué significa similarity_search?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Cómo se relaciona similarity_search con el proyecto?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Qué debe responder el tutor sobre similarity_search?", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "¿Qué es top_k dentro del tutor?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Para qué sirve top_k en el sistema?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Qué función cumple top_k?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Cómo ayuda top_k al tutor?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Por qué es importante top_k?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Cómo se usa top_k en el proyecto?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "Explica brevemente top_k.", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "Define top_k en el contexto del tutor.", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Qué papel tiene top_k en el tutor?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Cómo se relaciona top_k con el proyecto?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Qué debe responder el tutor sobre top_k?", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "¿Qué es latencia_total_seg dentro del tutor?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Para qué sirve latencia_total_seg en el sistema?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Qué función cumple latencia_total_seg?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Cómo ayuda latencia_total_seg al tutor?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Por qué es importante latencia_total_seg?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Cómo se usa latencia_total_seg en el proyecto?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "Explica brevemente latencia_total_seg.", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "Define latencia_total_seg en el contexto del tutor.", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Qué papel tiene latencia_total_seg en el tutor?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Qué significa latencia_total_seg?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Cómo se relaciona latencia_total_seg con el proyecto?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Qué debe responder el tutor sobre latencia_total_seg?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "¿Qué es chunks_recuperados dentro del tutor?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Para qué sirve chunks_recuperados en el sistema?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Qué función cumple chunks_recuperados?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Cómo ayuda chunks_recuperados al tutor?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Por qué es importante chunks_recuperados?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Cómo se usa chunks_recuperados en el proyecto?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "Explica brevemente chunks_recuperados.", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "Define chunks_recuperados en el contexto del tutor.", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Qué papel tiene chunks_recuperados en el tutor?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Cómo se relaciona chunks_recuperados con el proyecto?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Qué debe responder el tutor sobre chunks_recuperados?", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "¿Qué es chunks_relevantes dentro del tutor?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Para qué sirve chunks_relevantes en el sistema?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Qué función cumple chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Cómo ayuda chunks_relevantes al tutor?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Por qué es importante chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Cómo se usa chunks_relevantes en el proyecto?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "Explica brevemente chunks_relevantes.", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "Define chunks_relevantes en el contexto del tutor.", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Qué papel tiene chunks_relevantes en el tutor?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Qué significa chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Cómo se relaciona chunks_relevantes con el proyecto?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Qué debe responder el tutor sobre chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "¿Qué es respuesta académica dentro del tutor?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Para qué sirve respuesta académica en el sistema?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Qué función cumple respuesta académica?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Cómo ayuda respuesta académica al tutor?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Por qué es importante respuesta académica?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Cómo se usa respuesta académica en el proyecto?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "Explica brevemente respuesta académica.", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "Define respuesta académica en el contexto del tutor.", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Qué papel tiene respuesta académica en el tutor?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Qué significa respuesta académica?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Cómo se relaciona respuesta académica con el proyecto?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Qué debe responder el tutor sobre respuesta académica?", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "¿Qué es evidencia documental dentro del tutor?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Para qué sirve evidencia documental en el sistema?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Qué función cumple evidencia documental?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Cómo ayuda evidencia documental al tutor?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Por qué es importante evidencia documental?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Cómo se usa evidencia documental en el proyecto?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "Explica brevemente evidencia documental.", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "Define evidencia documental en el contexto del tutor.", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Qué papel tiene evidencia documental en el tutor?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Cómo se relaciona evidencia documental con el proyecto?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Qué debe responder el tutor sobre evidencia documental?", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "¿Qué es cifra negra dentro del tutor?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Para qué sirve cifra negra en el sistema?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Qué función cumple cifra negra?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Cómo ayuda cifra negra al tutor?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Por qué es importante cifra negra?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Cómo se usa cifra negra en el proyecto?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "Explica brevemente cifra negra.", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "Define cifra negra en el contexto del tutor.", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Qué papel tiene cifra negra en el tutor?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Cómo se relaciona cifra negra con el proyecto?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Qué debe responder el tutor sobre cifra negra?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "¿Qué es ENVIPE dentro del tutor?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Para qué sirve ENVIPE en el sistema?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Qué función cumple ENVIPE?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Cómo ayuda ENVIPE al tutor?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Por qué es importante ENVIPE?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Cómo se usa ENVIPE en el proyecto?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "Explica brevemente ENVIPE.", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "Define ENVIPE en el contexto del tutor.", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Qué papel tiene ENVIPE en el tutor?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Qué significa ENVIPE?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Cómo se relaciona ENVIPE con el proyecto?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Qué debe responder el tutor sobre ENVIPE?", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "¿Qué es ENSU dentro del tutor?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Para qué sirve ENSU en el sistema?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Qué función cumple ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Cómo ayuda ENSU al tutor?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Por qué es importante ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Cómo se usa ENSU en el proyecto?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "Explica brevemente ENSU.", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "Define ENSU en el contexto del tutor.", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Qué papel tiene ENSU en el tutor?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Qué significa ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Cómo se relaciona ENSU con el proyecto?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Qué debe responder el tutor sobre ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "¿Qué es INEGI dentro del tutor?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Para qué sirve INEGI en el sistema?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Qué función cumple INEGI?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Cómo ayuda INEGI al tutor?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Por qué es importante INEGI?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Cómo se usa INEGI en el proyecto?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "Explica brevemente INEGI.", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "Define INEGI en el contexto del tutor.", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Qué papel tiene INEGI en el tutor?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Qué significa INEGI?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Cómo se relaciona INEGI con el proyecto?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Qué debe responder el tutor sobre INEGI?", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "¿Qué es ONC dentro del tutor?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Para qué sirve ONC en el sistema?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Qué función cumple ONC?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Cómo ayuda ONC al tutor?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Por qué es importante ONC?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Cómo se usa ONC en el proyecto?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "Explica brevemente ONC.", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "Define ONC en el contexto del tutor.", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Qué papel tiene ONC en el tutor?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Qué significa ONC?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Cómo se relaciona ONC con el proyecto?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Qué debe responder el tutor sobre ONC?", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "¿Qué es homicidios dentro del tutor?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Para qué sirve homicidios en el sistema?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Qué función cumple homicidios?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Cómo ayuda homicidios al tutor?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Por qué es importante homicidios?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Cómo se usa homicidios en el proyecto?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "Explica brevemente homicidios.", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "Define homicidios en el contexto del tutor.", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Qué papel tiene homicidios en el tutor?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Qué significa homicidios?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Cómo se relaciona homicidios con el proyecto?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Qué debe responder el tutor sobre homicidios?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "¿Qué es extorsión dentro del tutor?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Para qué sirve extorsión en el sistema?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Qué función cumple extorsión?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Cómo ayuda extorsión al tutor?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Por qué es importante extorsión?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Cómo se usa extorsión en el proyecto?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "Explica brevemente extorsión.", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "Define extorsión en el contexto del tutor.", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Qué papel tiene extorsión en el tutor?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Qué significa extorsión?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Cómo se relaciona extorsión con el proyecto?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Qué debe responder el tutor sobre extorsión?", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "¿Qué es victimización dentro del tutor?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Para qué sirve victimización en el sistema?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Qué función cumple victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Cómo ayuda victimización al tutor?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Por qué es importante victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Cómo se usa victimización en el proyecto?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "Explica brevemente victimización.", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "Define victimización en el contexto del tutor.", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Qué papel tiene victimización en el tutor?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Qué significa victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Cómo se relaciona victimización con el proyecto?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Qué debe responder el tutor sobre victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "¿Qué es subregistro dentro del tutor?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Para qué sirve subregistro en el sistema?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Qué función cumple subregistro?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Cómo ayuda subregistro al tutor?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Por qué es importante subregistro?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Cómo se usa subregistro en el proyecto?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "Explica brevemente subregistro.", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "Define subregistro en el contexto del tutor.", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Qué papel tiene subregistro en el tutor?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Qué significa subregistro?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Cómo se relaciona subregistro con el proyecto?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Qué debe responder el tutor sobre subregistro?", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "¿Qué es violencia urbana dentro del tutor?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Para qué sirve violencia urbana en el sistema?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Qué función cumple violencia urbana?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Cómo ayuda violencia urbana al tutor?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Por qué es importante violencia urbana?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Cómo se usa violencia urbana en el proyecto?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "Explica brevemente violencia urbana.", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "Define violencia urbana en el contexto del tutor.", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Qué papel tiene violencia urbana en el tutor?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Qué significa violencia urbana?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Cómo se relaciona violencia urbana con el proyecto?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Qué debe responder el tutor sobre violencia urbana?", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "¿Qué es seguridad pública dentro del tutor?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Para qué sirve seguridad pública en el sistema?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Qué función cumple seguridad pública?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Cómo ayuda seguridad pública al tutor?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Por qué es importante seguridad pública?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Cómo se usa seguridad pública en el proyecto?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "Explica brevemente seguridad pública.", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "Define seguridad pública en el contexto del tutor.", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Qué papel tiene seguridad pública en el tutor?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Qué significa seguridad pública?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Cómo se relaciona seguridad pública con el proyecto?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Qué debe responder el tutor sobre seguridad pública?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "¿Qué es alucinación dentro del tutor?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Para qué sirve alucinación en el sistema?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Qué función cumple alucinación?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Cómo ayuda alucinación al tutor?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Por qué es importante alucinación?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Cómo se usa alucinación en el proyecto?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "Explica brevemente alucinación.", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "Define alucinación en el contexto del tutor.", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Qué papel tiene alucinación en el tutor?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Qué significa alucinación?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Cómo se relaciona alucinación con el proyecto?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Qué debe responder el tutor sobre alucinación?", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "¿Qué es router dentro del tutor?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Para qué sirve router en el sistema?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Qué función cumple router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Cómo ayuda router al tutor?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Por qué es importante router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Cómo se usa router en el proyecto?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "Explica brevemente router.", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "Define router en el contexto del tutor.", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Qué papel tiene router en el tutor?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Qué significa router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Cómo se relaciona router con el proyecto?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Qué debe responder el tutor sobre router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "¿Qué es pregunta híbrida dentro del tutor?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Para qué sirve pregunta híbrida en el sistema?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Qué función cumple pregunta híbrida?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Cómo ayuda pregunta híbrida al tutor?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Por qué es importante pregunta híbrida?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Cómo se usa pregunta híbrida en el proyecto?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "Explica brevemente pregunta híbrida.", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "Define pregunta híbrida en el contexto del tutor.", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Qué papel tiene pregunta híbrida en el tutor?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Qué significa pregunta híbrida?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Cómo se relaciona pregunta híbrida con el proyecto?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Qué debe responder el tutor sobre pregunta híbrida?", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "¿Qué es pregunta documental dentro del tutor?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Para qué sirve pregunta documental en el sistema?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Qué función cumple pregunta documental?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Cómo ayuda pregunta documental al tutor?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Por qué es importante pregunta documental?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Cómo se usa pregunta documental en el proyecto?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "Explica brevemente pregunta documental.", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "Define pregunta documental en el contexto del tutor.", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Qué papel tiene pregunta documental en el tutor?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Qué significa pregunta documental?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Cómo se relaciona pregunta documental con el proyecto?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Qué debe responder el tutor sobre pregunta documental?", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "¿Qué es pregunta técnica dentro del tutor?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Para qué sirve pregunta técnica en el sistema?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Qué función cumple pregunta técnica?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Cómo ayuda pregunta técnica al tutor?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Por qué es importante pregunta técnica?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Cómo se usa pregunta técnica en el proyecto?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "Explica brevemente pregunta técnica.", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "Define pregunta técnica en el contexto del tutor.", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Qué papel tiene pregunta técnica en el tutor?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Qué significa pregunta técnica?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Cómo se relaciona pregunta técnica con el proyecto?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Qué debe responder el tutor sobre pregunta técnica?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "¿Qué es búsqueda semántica dentro del tutor?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Para qué sirve búsqueda semántica en el sistema?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Qué función cumple búsqueda semántica?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Cómo ayuda búsqueda semántica al tutor?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Por qué es importante búsqueda semántica?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Cómo se usa búsqueda semántica en el proyecto?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "Explica brevemente búsqueda semántica.", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "Define búsqueda semántica en el contexto del tutor.", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Qué papel tiene búsqueda semántica en el tutor?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Qué significa búsqueda semántica?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Cómo se relaciona búsqueda semántica con el proyecto?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Qué debe responder el tutor sobre búsqueda semántica?", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "¿Qué es búsqueda léxica dentro del tutor?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Para qué sirve búsqueda léxica en el sistema?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Qué función cumple búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Cómo ayuda búsqueda léxica al tutor?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Por qué es importante búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Cómo se usa búsqueda léxica en el proyecto?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "Explica brevemente búsqueda léxica.", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "Define búsqueda léxica en el contexto del tutor.", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Qué papel tiene búsqueda léxica en el tutor?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Qué significa búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Cómo se relaciona búsqueda léxica con el proyecto?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Qué debe responder el tutor sobre búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "¿Qué es base vectorial dentro del tutor?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Para qué sirve base vectorial en el sistema?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Qué función cumple base vectorial?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Cómo ayuda base vectorial al tutor?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Por qué es importante base vectorial?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Cómo se usa base vectorial en el proyecto?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "Explica brevemente base vectorial.", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "Define base vectorial en el contexto del tutor.", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Qué papel tiene base vectorial en el tutor?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Qué significa base vectorial?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Cómo se relaciona base vectorial con el proyecto?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Qué debe responder el tutor sobre base vectorial?", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "¿Qué es similarity score dentro del tutor?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Para qué sirve similarity score en el sistema?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Qué función cumple similarity score?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Cómo ayuda similarity score al tutor?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Por qué es importante similarity score?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Cómo se usa similarity score en el proyecto?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "Explica brevemente similarity score.", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "Define similarity score en el contexto del tutor.", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Qué papel tiene similarity score en el tutor?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Qué significa similarity score?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Cómo se relaciona similarity score con el proyecto?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Qué debe responder el tutor sobre similarity score?", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "¿Qué es recuperación contextual dentro del tutor?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Para qué sirve recuperación contextual en el sistema?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Qué función cumple recuperación contextual?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Cómo ayuda recuperación contextual al tutor?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Por qué es importante recuperación contextual?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Cómo se usa recuperación contextual en el proyecto?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "Explica brevemente recuperación contextual.", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "Define recuperación contextual en el contexto del tutor.", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Qué papel tiene recuperación contextual en el tutor?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Cómo se relaciona recuperación contextual con el proyecto?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Qué debe responder el tutor sobre recuperación contextual?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "¿Qué es limpieza de texto dentro del tutor?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Para qué sirve limpieza de texto en el sistema?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Qué función cumple limpieza de texto?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Cómo ayuda limpieza de texto al tutor?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Por qué es importante limpieza de texto?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Cómo se usa limpieza de texto en el proyecto?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "Explica brevemente limpieza de texto.", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "Define limpieza de texto en el contexto del tutor.", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Qué papel tiene limpieza de texto en el tutor?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Qué significa limpieza de texto?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Cómo se relaciona limpieza de texto con el proyecto?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Qué debe responder el tutor sobre limpieza de texto?", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "¿Qué es neutralidad académica dentro del tutor?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Para qué sirve neutralidad académica en el sistema?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Qué función cumple neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Cómo ayuda neutralidad académica al tutor?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Por qué es importante neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Cómo se usa neutralidad académica en el proyecto?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "Explica brevemente neutralidad académica.", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "Define neutralidad académica en el contexto del tutor.", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Qué papel tiene neutralidad académica en el tutor?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Qué significa neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Cómo se relaciona neutralidad académica con el proyecto?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Qué debe responder el tutor sobre neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "¿Qué es preguntas predictivas dentro del tutor?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Para qué sirve preguntas predictivas en el sistema?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Qué función cumple preguntas predictivas?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Cómo ayuda preguntas predictivas al tutor?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Por qué es importante preguntas predictivas?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Cómo se usa preguntas predictivas en el proyecto?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "Explica brevemente preguntas predictivas.", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "Define preguntas predictivas en el contexto del tutor.", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Qué papel tiene preguntas predictivas en el tutor?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Qué significa preguntas predictivas?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Cómo se relaciona preguntas predictivas con el proyecto?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Qué debe responder el tutor sobre preguntas predictivas?", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "¿Qué es preguntas políticas dentro del tutor?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Para qué sirve preguntas políticas en el sistema?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Qué función cumple preguntas políticas?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Cómo ayuda preguntas políticas al tutor?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Por qué es importante preguntas políticas?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Cómo se usa preguntas políticas en el proyecto?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "Explica brevemente preguntas políticas.", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "Define preguntas políticas en el contexto del tutor.", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Qué papel tiene preguntas políticas en el tutor?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Qué significa preguntas políticas?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Cómo se relaciona preguntas políticas con el proyecto?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Qué debe responder el tutor sobre preguntas políticas?", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "¿Qué es delitos de alto impacto dentro del tutor?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Para qué sirve delitos de alto impacto en el sistema?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Qué función cumple delitos de alto impacto?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Cómo ayuda delitos de alto impacto al tutor?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Por qué es importante delitos de alto impacto?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Cómo se usa delitos de alto impacto en el proyecto?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "Explica brevemente delitos de alto impacto.", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "Define delitos de alto impacto en el contexto del tutor.", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Qué papel tiene delitos de alto impacto en el tutor?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Qué significa delitos de alto impacto?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Cómo se relaciona delitos de alto impacto con el proyecto?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Qué debe responder el tutor sobre delitos de alto impacto?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "¿Qué es registros oficiales dentro del tutor?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Para qué sirve registros oficiales en el sistema?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Qué función cumple registros oficiales?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Cómo ayuda registros oficiales al tutor?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Por qué es importante registros oficiales?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Cómo se usa registros oficiales en el proyecto?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "Explica brevemente registros oficiales.", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "Define registros oficiales en el contexto del tutor.", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Qué papel tiene registros oficiales en el tutor?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Qué significa registros oficiales?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Cómo se relaciona registros oficiales con el proyecto?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Qué debe responder el tutor sobre registros oficiales?", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "¿Qué es encuestas de victimización dentro del tutor?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Para qué sirve encuestas de victimización en el sistema?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Qué función cumple encuestas de victimización?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Cómo ayuda encuestas de victimización al tutor?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Por qué es importante encuestas de victimización?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Cómo se usa encuestas de victimización en el proyecto?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "Explica brevemente encuestas de victimización.", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "Define encuestas de victimización en el contexto del tutor.", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Qué papel tiene encuestas de victimización en el tutor?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Qué significa encuestas de victimización?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Cómo se relaciona encuestas de victimización con el proyecto?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Qué debe responder el tutor sobre encuestas de victimización?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "¿Qué es actualización del corpus dentro del tutor?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Para qué sirve actualización del corpus en el sistema?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Qué función cumple actualización del corpus?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Cómo ayuda actualización del corpus al tutor?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Por qué es importante actualización del corpus?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Cómo se usa actualización del corpus en el proyecto?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "Explica brevemente actualización del corpus.", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "Define actualización del corpus en el contexto del tutor.", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Qué papel tiene actualización del corpus en el tutor?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Qué significa actualización del corpus?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Cómo se relaciona actualización del corpus con el proyecto?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Qué debe responder el tutor sobre actualización del corpus?", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "¿Qué es recuperación aumentada dentro del tutor?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Para qué sirve recuperación aumentada en el sistema?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Qué función cumple recuperación aumentada?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Cómo ayuda recuperación aumentada al tutor?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Por qué es importante recuperación aumentada?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Cómo se usa recuperación aumentada en el proyecto?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "Explica brevemente recuperación aumentada.", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "Define recuperación aumentada en el contexto del tutor.", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Qué papel tiene recuperación aumentada en el tutor?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Qué significa recuperación aumentada?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Cómo se relaciona recuperación aumentada con el proyecto?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Qué debe responder el tutor sobre recuperación aumentada?", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "¿Qué es pipeline RAG dentro del tutor?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Para qué sirve pipeline RAG en el sistema?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Qué función cumple pipeline RAG?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Cómo ayuda pipeline RAG al tutor?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Por qué es importante pipeline RAG?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Cómo se usa pipeline RAG en el proyecto?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "Explica brevemente pipeline RAG.", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "Define pipeline RAG en el contexto del tutor.", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Qué papel tiene pipeline RAG en el tutor?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Qué significa pipeline RAG?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Cómo se relaciona pipeline RAG con el proyecto?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "¿Qué debe responder el tutor sobre pipeline RAG?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "Compara RAG con Fine-Tuning.", "response": "RAG recupera evidencia desde documentos externos; Fine-Tuning ajusta el comportamiento del modelo con ejemplos."}
+{"instruction": "¿En qué se distinguen RAG y Fine-Tuning?", "response": "RAG recupera evidencia desde documentos externos; Fine-Tuning ajusta el comportamiento del modelo con ejemplos."}
+{"instruction": "¿Cuál es la diferencia entre RAG y Fine-Tuning?", "response": "RAG recupera evidencia desde documentos externos; Fine-Tuning ajusta el comportamiento del modelo con ejemplos."}
+{"instruction": "Compara embeddings con keywords.", "response": "Los embeddings comparan significado; las keywords dependen de coincidencias exactas de palabras."}
+{"instruction": "¿En qué se distinguen embeddings y keywords?", "response": "Los embeddings comparan significado; las keywords dependen de coincidencias exactas de palabras."}
+{"instruction": "¿Cuál es la diferencia entre embeddings y keywords?", "response": "Los embeddings comparan significado; las keywords dependen de coincidencias exactas de palabras."}
+{"instruction": "¿Qué diferencia existe entre FAISS y SentenceTransformers?", "response": "SentenceTransformers crea embeddings y FAISS los indexa para buscar similitud."}
+{"instruction": "Compara FAISS con SentenceTransformers.", "response": "SentenceTransformers crea embeddings y FAISS los indexa para buscar similitud."}
+{"instruction": "¿En qué se distinguen FAISS y SentenceTransformers?", "response": "SentenceTransformers crea embeddings y FAISS los indexa para buscar similitud."}
+{"instruction": "¿Cuál es la diferencia entre FAISS y SentenceTransformers?", "response": "SentenceTransformers crea embeddings y FAISS los indexa para buscar similitud."}
+{"instruction": "Compara chunk con documento completo.", "response": "Un chunk es un fragmento pequeño; el documento completo contiene todo el PDF."}
+{"instruction": "¿En qué se distinguen chunk y documento completo?", "response": "Un chunk es un fragmento pequeño; el documento completo contiene todo el PDF."}
+{"instruction": "¿Cuál es la diferencia entre chunk y documento completo?", "response": "Un chunk es un fragmento pequeño; el documento completo contiene todo el PDF."}
+{"instruction": "¿Qué diferencia existe entre ENVIPE y ENSU?", "response": "ENVIPE mide victimización y percepción; ENSU se enfoca en seguridad pública urbana."}
+{"instruction": "Compara ENVIPE con ENSU.", "response": "ENVIPE mide victimización y percepción; ENSU se enfoca en seguridad pública urbana."}
+{"instruction": "¿En qué se distinguen ENVIPE y ENSU?", "response": "ENVIPE mide victimización y percepción; ENSU se enfoca en seguridad pública urbana."}
+{"instruction": "¿Cuál es la diferencia entre ENVIPE y ENSU?", "response": "ENVIPE mide victimización y percepción; ENSU se enfoca en seguridad pública urbana."}
+{"instruction": "¿Qué diferencia existe entre registros oficiales y encuestas de victimización?", "response": "Los registros oficiales dependen de denuncias; las encuestas capturan delitos no denunciados."}
+{"instruction": "Compara registros oficiales con encuestas de victimización.", "response": "Los registros oficiales dependen de denuncias; las encuestas capturan delitos no denunciados."}
+{"instruction": "¿En qué se distinguen registros oficiales y encuestas de victimización?", "response": "Los registros oficiales dependen de denuncias; las encuestas capturan delitos no denunciados."}
+{"instruction": "¿Cuál es la diferencia entre registros oficiales y encuestas de victimización?", "response": "Los registros oficiales dependen de denuncias; las encuestas capturan delitos no denunciados."}
+{"instruction": "¿Qué diferencia existe entre búsqueda semántica y búsqueda léxica?", "response": "La semántica busca por significado; la léxica por palabras exactas."}
+{"instruction": "Compara búsqueda semántica con búsqueda léxica.", "response": "La semántica busca por significado; la léxica por palabras exactas."}
+{"instruction": "¿En qué se distinguen búsqueda semántica y búsqueda léxica?", "response": "La semántica busca por significado; la léxica por palabras exactas."}
+{"instruction": "¿Cuál es la diferencia entre búsqueda semántica y búsqueda léxica?", "response": "La semántica busca por significado; la léxica por palabras exactas."}
+{"instruction": "Compara evidencia con opinión.", "response": "La evidencia está respaldada por documentos; la opinión no necesariamente tiene respaldo documental."}
+{"instruction": "¿En qué se distinguen evidencia y opinión?", "response": "La evidencia está respaldada por documentos; la opinión no necesariamente tiene respaldo documental."}
+{"instruction": "¿Cuál es la diferencia entre evidencia y opinión?", "response": "La evidencia está respaldada por documentos; la opinión no necesariamente tiene respaldo documental."}
+{"instruction": "Compara entrenamiento con recuperación.", "response": "El entrenamiento ajusta el modelo; la recuperación busca evidencia en el corpus."}
+{"instruction": "¿En qué se distinguen entrenamiento y recuperación?", "response": "El entrenamiento ajusta el modelo; la recuperación busca evidencia en el corpus."}
+{"instruction": "¿Cuál es la diferencia entre entrenamiento y recuperación?", "response": "El entrenamiento ajusta el modelo; la recuperación busca evidencia en el corpus."}
+{"instruction": "¿Qué diferencia existe entre TinyLlama y FAISS?", "response": "TinyLlama redacta respuestas; FAISS recupera fragmentos relevantes."}
+{"instruction": "Compara TinyLlama con FAISS.", "response": "TinyLlama redacta respuestas; FAISS recupera fragmentos relevantes."}
+{"instruction": "¿En qué se distinguen TinyLlama y FAISS?", "response": "TinyLlama redacta respuestas; FAISS recupera fragmentos relevantes."}
+{"instruction": "¿Cuál es la diferencia entre TinyLlama y FAISS?", "response": "TinyLlama redacta respuestas; FAISS recupera fragmentos relevantes."}
+{"instruction": "¿Cómo se conectan embeddings, FAISS y chunks?", "response": "Los chunks se convierten en embeddings y FAISS usa esos vectores para recuperar los fragmentos más similares a la pregunta."}
+{"instruction": "Explica la relación entre embeddings, FAISS y chunks.", "response": "Los chunks se convierten en embeddings y FAISS usa esos vectores para recuperar los fragmentos más similares a la pregunta."}
+{"instruction": "¿Qué relación hay entre embeddings, FAISS y chunks?", "response": "Los chunks se convierten en embeddings y FAISS usa esos vectores para recuperar los fragmentos más similares a la pregunta."}
+{"instruction": "¿Cómo se conectan RAG, corpus y evidencia documental?", "response": "RAG consulta el corpus para recuperar evidencia documental y usarla como base de la respuesta."}
+{"instruction": "Explica la relación entre RAG, corpus y evidencia documental.", "response": "RAG consulta el corpus para recuperar evidencia documental y usarla como base de la respuesta."}
+{"instruction": "¿Qué relación hay entre RAG, corpus y evidencia documental?", "response": "RAG consulta el corpus para recuperar evidencia documental y usarla como base de la respuesta."}
+{"instruction": "¿Cómo se conectan LoRA, Fine-Tuning y TinyLlama?", "response": "Fine-Tuning adapta TinyLlama y LoRA permite hacerlo con menos recursos."}
+{"instruction": "Explica la relación entre LoRA, Fine-Tuning y TinyLlama.", "response": "Fine-Tuning adapta TinyLlama y LoRA permite hacerlo con menos recursos."}
+{"instruction": "¿Qué relación hay entre LoRA, Fine-Tuning y TinyLlama?", "response": "Fine-Tuning adapta TinyLlama y LoRA permite hacerlo con menos recursos."}
+{"instruction": "¿Cómo se conectan ENVIPE, cifra negra y victimización?", "response": "ENVIPE mide victimización y ayuda a estimar delitos no denunciados, relacionados con la cifra negra."}
+{"instruction": "Explica la relación entre ENVIPE, cifra negra y victimización.", "response": "ENVIPE mide victimización y ayuda a estimar delitos no denunciados, relacionados con la cifra negra."}
+{"instruction": "¿Qué relación hay entre ENVIPE, cifra negra y victimización?", "response": "ENVIPE mide victimización y ayuda a estimar delitos no denunciados, relacionados con la cifra negra."}
+{"instruction": "¿Cómo se conectan INEGI, ENSU y seguridad pública?", "response": "INEGI publica ENSU, una encuesta que aporta información sobre seguridad pública urbana."}
+{"instruction": "Explica la relación entre INEGI, ENSU y seguridad pública.", "response": "INEGI publica ENSU, una encuesta que aporta información sobre seguridad pública urbana."}
+{"instruction": "¿Qué relación hay entre INEGI, ENSU y seguridad pública?", "response": "INEGI publica ENSU, una encuesta que aporta información sobre seguridad pública urbana."}
+{"instruction": "¿Cómo se conectan ONC, extorsión y delitos de alto impacto?", "response": "Los reportes ONC analizan delitos de alto impacto y pueden incluir información sobre extorsión."}
+{"instruction": "Explica la relación entre ONC, extorsión y delitos de alto impacto.", "response": "Los reportes ONC analizan delitos de alto impacto y pueden incluir información sobre extorsión."}
+{"instruction": "¿Qué relación hay entre ONC, extorsión y delitos de alto impacto?", "response": "Los reportes ONC analizan delitos de alto impacto y pueden incluir información sobre extorsión."}
+{"instruction": "¿Cómo se conectan subregistro, registros oficiales y violencia?", "response": "El subregistro hace que los registros oficiales no reflejen toda la magnitud de la violencia."}
+{"instruction": "Explica la relación entre subregistro, registros oficiales y violencia.", "response": "El subregistro hace que los registros oficiales no reflejen toda la magnitud de la violencia."}
+{"instruction": "¿Qué relación hay entre subregistro, registros oficiales y violencia?", "response": "El subregistro hace que los registros oficiales no reflejen toda la magnitud de la violencia."}
+{"instruction": "¿Cómo se conectan top_k, similarity_search y chunks_recuperados?", "response": "similarity_search usa top_k para decidir cuántos chunks recuperar y reportarlos como chunks_recuperados."}
+{"instruction": "Explica la relación entre top_k, similarity_search y chunks_recuperados.", "response": "similarity_search usa top_k para decidir cuántos chunks recuperar y reportarlos como chunks_recuperados."}
+{"instruction": "¿Qué relación hay entre top_k, similarity_search y chunks_recuperados?", "response": "similarity_search usa top_k para decidir cuántos chunks recuperar y reportarlos como chunks_recuperados."}
+{"instruction": "¿Cómo se conectan latencia_total_seg y rendimiento del tutor?", "response": "latencia_total_seg permite medir cuánto tarda el sistema y evaluar su rendimiento."}
+{"instruction": "Explica la relación entre latencia_total_seg y rendimiento del tutor.", "response": "latencia_total_seg permite medir cuánto tarda el sistema y evaluar su rendimiento."}
+{"instruction": "¿Qué relación hay entre latencia_total_seg y rendimiento del tutor?", "response": "latencia_total_seg permite medir cuánto tarda el sistema y evaluar su rendimiento."}
+{"instruction": "¿Cómo se conectan preguntas políticas, evidencia y rechazo?", "response": "Si una pregunta política no tiene evidencia suficiente, el tutor debe rechazarla o responder con cautela."}
+{"instruction": "Explica la relación entre preguntas políticas, evidencia y rechazo.", "response": "Si una pregunta política no tiene evidencia suficiente, el tutor debe rechazarla o responder con cautela."}
+{"instruction": "¿Qué relación hay entre preguntas políticas, evidencia y rechazo?", "response": "Si una pregunta política no tiene evidencia suficiente, el tutor debe rechazarla o responder con cautela."}
+{"instruction": "Si el tutor no encuentra chunks relevantes, ¿qué debe hacer?", "response": "Debe indicar que no hay evidencia suficiente en el corpus y evitar inventar información."}
+{"instruction": "Si el tutor no encuentra chunks relevantes, ¿qué debería hacer?", "response": "Debe indicar que no hay evidencia suficiente en el corpus y evitar inventar información."}
+{"instruction": "Cuando el tutor no encuentra chunks relevantes, ¿qué debe hacer?", "response": "Debe indicar que no hay evidencia suficiente en el corpus y evitar inventar información."}
+{"instruction": "Si una pregunta mezcla RAG y homicidios, ¿cómo debe responder?", "response": "Debe explicar la parte técnica y usar documentos recuperados sobre homicidios como evidencia."}
+{"instruction": "Cuando una pregunta mezcla RAG y homicidios, ¿cómo debe responder?", "response": "Debe explicar la parte técnica y usar documentos recuperados sobre homicidios como evidencia."}
+{"instruction": "Si FAISS recupera texto poco relacionado, ¿qué puede pasar?", "response": "La respuesta puede ser parcial o incorrecta porque depende de la calidad de los chunks recuperados."}
+{"instruction": "Cuando FAISS recupera texto poco relacionado, ¿qué puede pasar?", "response": "La respuesta puede ser parcial o incorrecta porque depende de la calidad de los chunks recuperados."}
+{"instruction": "Si el corpus no tiene información de un tema, ¿qué debe responder?", "response": "Debe decir que no encontró evidencia suficiente en los documentos disponibles."}
+{"instruction": "Si el corpus no tiene información de un tema, ¿qué debería responder?", "response": "Debe decir que no encontró evidencia suficiente en los documentos disponibles."}
+{"instruction": "Cuando el corpus no tiene información de un tema, ¿qué debe responder?", "response": "Debe decir que no encontró evidencia suficiente en los documentos disponibles."}
+{"instruction": "Si una consulta es ambigua, ¿qué debe hacer el tutor?", "response": "Debe responder solo con evidencia claramente relacionada y reconocer la limitación."}
+{"instruction": "Si una consulta es ambigua, ¿qué debería hacer el tutor?", "response": "Debe responder solo con evidencia claramente relacionada y reconocer la limitación."}
+{"instruction": "Cuando una consulta es ambigua, ¿qué debe hacer el tutor?", "response": "Debe responder solo con evidencia claramente relacionada y reconocer la limitación."}
+{"instruction": "Si el usuario pregunta por predicciones de violencia, ¿qué debe hacer el tutor?", "response": "Debe evitar predecir sin evidencia verificable y explicar que el corpus no permite afirmarlo."}
+{"instruction": "Si el usuario pregunta por predicciones de violencia, ¿qué debería hacer el tutor?", "response": "Debe evitar predecir sin evidencia verificable y explicar que el corpus no permite afirmarlo."}
+{"instruction": "Cuando el usuario pregunta por predicciones de violencia, ¿qué debe hacer el tutor?", "response": "Debe evitar predecir sin evidencia verificable y explicar que el corpus no permite afirmarlo."}
+{"instruction": "Si se agregan nuevos PDFs, ¿qué se debe actualizar?", "response": "Se deben procesar los PDFs, crear chunks, generar embeddings y actualizar la base FAISS."}
+{"instruction": "Cuando se agregan nuevos PDFs, ¿qué se debe actualizar?", "response": "Se deben procesar los PDFs, crear chunks, generar embeddings y actualizar la base FAISS."}
+{"instruction": "Si se cambia top_k, ¿qué efecto puede tener?", "response": "Puede cambiar la cantidad de fragmentos recuperados y afectar precisión, contexto y latencia."}
+{"instruction": "Cuando se cambia top_k, ¿qué efecto puede tener?", "response": "Puede cambiar la cantidad de fragmentos recuperados y afectar precisión, contexto y latencia."}
+{"instruction": "Si los chunks son muy grandes, ¿qué problema puede ocurrir?", "response": "Pueden mezclar temas y reducir la precisión de la recuperación."}
+{"instruction": "Cuando los chunks son muy grandes, ¿qué problema puede ocurrir?", "response": "Pueden mezclar temas y reducir la precisión de la recuperación."}
+{"instruction": "Si los chunks son muy pequeños, ¿qué problema puede ocurrir?", "response": "Pueden perder contexto necesario para responder correctamente."}
+{"instruction": "Cuando los chunks son muy pequeños, ¿qué problema puede ocurrir?", "response": "Pueden perder contexto necesario para responder correctamente."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre homicidios?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con homicidios dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre extorsión?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con extorsión dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre victimización?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con victimización dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre seguridad pública?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con seguridad pública dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre violencia urbana?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con violencia urbana dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre cifra negra?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con cifra negra dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre delitos de alto impacto?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con delitos de alto impacto dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Qué documento puede usar el tutor para responder sobre subregistro?", "response": "El tutor puede usar inegi_homicidios2024.pdf si ese documento contiene evidencia relacionada con subregistro dentro del corpus."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando inegi_homicidios2024.pdf?", "response": "Debe recuperar fragmentos relevantes de inegi_homicidios2024.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando patrones_homicidios.pdf?", "response": "Debe recuperar fragmentos relevantes de patrones_homicidios.pdf y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando ENVIPE?", "response": "Debe recuperar fragmentos relevantes de ENVIPE y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando ENSU?", "response": "Debe recuperar fragmentos relevantes de ENSU y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando reportes ONC?", "response": "Debe recuperar fragmentos relevantes de reportes ONC y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando corpus de PDFs?", "response": "Debe recuperar fragmentos relevantes de corpus de PDFs y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre homicidios usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre extorsión usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre victimización usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre seguridad pública usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre violencia urbana usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre cifra negra usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre delitos de alto impacto usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "¿Cómo justificaría el tutor una respuesta sobre subregistro usando documentos INEGI?", "response": "Debe recuperar fragmentos relevantes de documentos INEGI y responder únicamente con la evidencia encontrada."}
+{"instruction": "Pregunta de práctica 1: explica FAISS con palabras simples.", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "Consulta 2: ¿qué sabe el tutor sobre RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "Instrucción 3: responde de forma académica qué es embeddings.", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "Ejercicio 4: menciona la función de SentenceTransformers en el sistema RAG.", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "Caso 5: el usuario pregunta por chunks, ¿qué contestas?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "Pregunta de práctica 6: explica chunking con palabras simples.", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "Consulta 7: ¿qué sabe el tutor sobre TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "Instrucción 8: responde de forma académica qué es LoRA.", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "Ejercicio 9: menciona la función de Fine-Tuning en el sistema RAG.", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "Caso 10: el usuario pregunta por LangChain, ¿qué contestas?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "Pregunta de práctica 11: explica corpus con palabras simples.", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "Consulta 12: ¿qué sabe el tutor sobre PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "Instrucción 13: responde de forma académica qué es similarity_search.", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "Ejercicio 14: menciona la función de top_k en el sistema RAG.", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "Caso 15: el usuario pregunta por latencia_total_seg, ¿qué contestas?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "Pregunta de práctica 16: explica chunks_recuperados con palabras simples.", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "Consulta 17: ¿qué sabe el tutor sobre chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "Instrucción 18: responde de forma académica qué es respuesta académica.", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "Ejercicio 19: menciona la función de evidencia documental en el sistema RAG.", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "Caso 20: el usuario pregunta por cifra negra, ¿qué contestas?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "Pregunta de práctica 21: explica ENVIPE con palabras simples.", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "Consulta 22: ¿qué sabe el tutor sobre ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "Instrucción 23: responde de forma académica qué es INEGI.", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "Ejercicio 24: menciona la función de ONC en el sistema RAG.", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "Caso 25: el usuario pregunta por homicidios, ¿qué contestas?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "Pregunta de práctica 26: explica extorsión con palabras simples.", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "Consulta 27: ¿qué sabe el tutor sobre victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "Instrucción 28: responde de forma académica qué es subregistro.", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "Ejercicio 29: menciona la función de violencia urbana en el sistema RAG.", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "Caso 30: el usuario pregunta por seguridad pública, ¿qué contestas?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "Pregunta de práctica 31: explica alucinación con palabras simples.", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "Consulta 32: ¿qué sabe el tutor sobre router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "Instrucción 33: responde de forma académica qué es pregunta híbrida.", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "Ejercicio 34: menciona la función de pregunta documental en el sistema RAG.", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "Caso 35: el usuario pregunta por pregunta técnica, ¿qué contestas?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "Pregunta de práctica 36: explica búsqueda semántica con palabras simples.", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "Consulta 37: ¿qué sabe el tutor sobre búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "Instrucción 38: responde de forma académica qué es base vectorial.", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "Ejercicio 39: menciona la función de similarity score en el sistema RAG.", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "Caso 40: el usuario pregunta por recuperación contextual, ¿qué contestas?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "Pregunta de práctica 41: explica limpieza de texto con palabras simples.", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "Consulta 42: ¿qué sabe el tutor sobre neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "Instrucción 43: responde de forma académica qué es preguntas predictivas.", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "Ejercicio 44: menciona la función de preguntas políticas en el sistema RAG.", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "Caso 45: el usuario pregunta por delitos de alto impacto, ¿qué contestas?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "Pregunta de práctica 46: explica registros oficiales con palabras simples.", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "Consulta 47: ¿qué sabe el tutor sobre encuestas de victimización?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "Instrucción 48: responde de forma académica qué es actualización del corpus.", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "Ejercicio 49: menciona la función de recuperación aumentada en el sistema RAG.", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "Caso 50: el usuario pregunta por pipeline RAG, ¿qué contestas?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "Pregunta de práctica 51: explica FAISS con palabras simples.", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "Consulta 52: ¿qué sabe el tutor sobre RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "Instrucción 53: responde de forma académica qué es embeddings.", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "Ejercicio 54: menciona la función de SentenceTransformers en el sistema RAG.", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "Caso 55: el usuario pregunta por chunks, ¿qué contestas?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "Pregunta de práctica 56: explica chunking con palabras simples.", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "Consulta 57: ¿qué sabe el tutor sobre TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "Instrucción 58: responde de forma académica qué es LoRA.", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "Ejercicio 59: menciona la función de Fine-Tuning en el sistema RAG.", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "Caso 60: el usuario pregunta por LangChain, ¿qué contestas?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "Pregunta de práctica 61: explica corpus con palabras simples.", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "Consulta 62: ¿qué sabe el tutor sobre PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "Instrucción 63: responde de forma académica qué es similarity_search.", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "Ejercicio 64: menciona la función de top_k en el sistema RAG.", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "Caso 65: el usuario pregunta por latencia_total_seg, ¿qué contestas?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "Pregunta de práctica 66: explica chunks_recuperados con palabras simples.", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "Consulta 67: ¿qué sabe el tutor sobre chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "Instrucción 68: responde de forma académica qué es respuesta académica.", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "Ejercicio 69: menciona la función de evidencia documental en el sistema RAG.", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "Caso 70: el usuario pregunta por cifra negra, ¿qué contestas?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "Pregunta de práctica 71: explica ENVIPE con palabras simples.", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "Consulta 72: ¿qué sabe el tutor sobre ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "Instrucción 73: responde de forma académica qué es INEGI.", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "Ejercicio 74: menciona la función de ONC en el sistema RAG.", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "Caso 75: el usuario pregunta por homicidios, ¿qué contestas?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "Pregunta de práctica 76: explica extorsión con palabras simples.", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "Consulta 77: ¿qué sabe el tutor sobre victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "Instrucción 78: responde de forma académica qué es subregistro.", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "Ejercicio 79: menciona la función de violencia urbana en el sistema RAG.", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "Caso 80: el usuario pregunta por seguridad pública, ¿qué contestas?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "Pregunta de práctica 81: explica alucinación con palabras simples.", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "Consulta 82: ¿qué sabe el tutor sobre router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "Instrucción 83: responde de forma académica qué es pregunta híbrida.", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "Ejercicio 84: menciona la función de pregunta documental en el sistema RAG.", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "Caso 85: el usuario pregunta por pregunta técnica, ¿qué contestas?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "Pregunta de práctica 86: explica búsqueda semántica con palabras simples.", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "Consulta 87: ¿qué sabe el tutor sobre búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "Instrucción 88: responde de forma académica qué es base vectorial.", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "Ejercicio 89: menciona la función de similarity score en el sistema RAG.", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "Caso 90: el usuario pregunta por recuperación contextual, ¿qué contestas?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "Pregunta de práctica 91: explica limpieza de texto con palabras simples.", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "Consulta 92: ¿qué sabe el tutor sobre neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "Instrucción 93: responde de forma académica qué es preguntas predictivas.", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "Ejercicio 94: menciona la función de preguntas políticas en el sistema RAG.", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "Caso 95: el usuario pregunta por delitos de alto impacto, ¿qué contestas?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}
+{"instruction": "Pregunta de práctica 96: explica registros oficiales con palabras simples.", "response": "Los registros oficiales dependen de denuncias y reportes institucionales."}
+{"instruction": "Consulta 97: ¿qué sabe el tutor sobre encuestas de victimización?", "response": "Las encuestas de victimización capturan delitos sufridos aunque no estén denunciados."}
+{"instruction": "Instrucción 98: responde de forma académica qué es actualización del corpus.", "response": "Actualizar el corpus permite incorporar nueva información sin reentrenar todo el modelo."}
+{"instruction": "Ejercicio 99: menciona la función de recuperación aumentada en el sistema RAG.", "response": "La recuperación aumentada usa documentos externos antes de generar una respuesta."}
+{"instruction": "Caso 100: el usuario pregunta por pipeline RAG, ¿qué contestas?", "response": "El pipeline RAG recupera evidencia, construye contexto y genera una respuesta fundamentada."}
+{"instruction": "Pregunta de práctica 101: explica FAISS con palabras simples.", "response": "FAISS permite guardar y buscar embeddings para encontrar fragmentos similares a una pregunta."}
+{"instruction": "Consulta 102: ¿qué sabe el tutor sobre RAG?", "response": "RAG combina recuperación de documentos con generación de respuestas basadas en evidencia."}
+{"instruction": "Instrucción 103: responde de forma académica qué es embeddings.", "response": "Los embeddings convierten texto en vectores numéricos que representan significado semántico."}
+{"instruction": "Ejercicio 104: menciona la función de SentenceTransformers en el sistema RAG.", "response": "SentenceTransformers genera embeddings para preguntas y fragmentos del corpus."}
+{"instruction": "Caso 105: el usuario pregunta por chunks, ¿qué contestas?", "response": "Los chunks son fragmentos pequeños de documentos usados para mejorar la recuperación."}
+{"instruction": "Pregunta de práctica 106: explica chunking con palabras simples.", "response": "Chunking divide los PDFs en partes manejables para buscar evidencia específica."}
+{"instruction": "Consulta 107: ¿qué sabe el tutor sobre TinyLlama?", "response": "TinyLlama es el modelo generativo que redacta respuestas a partir del contexto recuperado."}
+{"instruction": "Instrucción 108: responde de forma académica qué es LoRA.", "response": "LoRA ajusta el modelo con menos recursos que un fine-tuning completo."}
+{"instruction": "Ejercicio 109: menciona la función de Fine-Tuning en el sistema RAG.", "response": "Fine-Tuning adapta el estilo y comportamiento del modelo usando ejemplos de entrenamiento."}
+{"instruction": "Caso 110: el usuario pregunta por LangChain, ¿qué contestas?", "response": "LangChain ayuda a conectar carga de documentos, embeddings, FAISS y generación de respuestas."}
+{"instruction": "Pregunta de práctica 111: explica corpus con palabras simples.", "response": "El corpus es el conjunto de documentos PDF usados como fuente de evidencia."}
+{"instruction": "Consulta 112: ¿qué sabe el tutor sobre PDFs?", "response": "Los PDFs funcionan como base documental para responder preguntas con respaldo."}
+{"instruction": "Instrucción 113: responde de forma académica qué es similarity_search.", "response": "similarity_search recupera los fragmentos más parecidos semánticamente a la consulta."}
+{"instruction": "Ejercicio 114: menciona la función de top_k en el sistema RAG.", "response": "top_k define la cantidad de fragmentos que se recuperan para responder."}
+{"instruction": "Caso 115: el usuario pregunta por latencia_total_seg, ¿qué contestas?", "response": "latencia_total_seg mide el tiempo total que tarda el tutor en responder."}
+{"instruction": "Pregunta de práctica 116: explica chunks_recuperados con palabras simples.", "response": "chunks_recuperados indica cuántos fragmentos fueron obtenidos desde la base vectorial."}
+{"instruction": "Consulta 117: ¿qué sabe el tutor sobre chunks_relevantes?", "response": "chunks_relevantes indica cuántos fragmentos recuperados parecen útiles para la consulta."}
+{"instruction": "Instrucción 118: responde de forma académica qué es respuesta académica.", "response": "Una respuesta académica es objetiva, clara, neutral y basada en evidencia documental."}
+{"instruction": "Ejercicio 119: menciona la función de evidencia documental en el sistema RAG.", "response": "La evidencia documental es información recuperada directamente desde el corpus."}
+{"instruction": "Caso 120: el usuario pregunta por cifra negra, ¿qué contestas?", "response": "La cifra negra representa delitos que no fueron denunciados o registrados oficialmente."}
+{"instruction": "Pregunta de práctica 121: explica ENVIPE con palabras simples.", "response": "ENVIPE es la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública."}
+{"instruction": "Consulta 122: ¿qué sabe el tutor sobre ENSU?", "response": "ENSU es la Encuesta Nacional de Seguridad Pública Urbana."}
+{"instruction": "Instrucción 123: responde de forma académica qué es INEGI.", "response": "INEGI aporta fuentes estadísticas oficiales usadas en el corpus del tutor."}
+{"instruction": "Ejercicio 124: menciona la función de ONC en el sistema RAG.", "response": "El Observatorio Nacional Ciudadano aporta reportes sobre delitos y seguridad pública."}
+{"instruction": "Caso 125: el usuario pregunta por homicidios, ¿qué contestas?", "response": "Los homicidios se responden usando documentos como inegi_homicidios2024.pdf y patrones_homicidios.pdf."}
+{"instruction": "Pregunta de práctica 126: explica extorsión con palabras simples.", "response": "La extorsión se analiza con reportes ONC y documentos de victimización como ENVIPE."}
+{"instruction": "Consulta 127: ¿qué sabe el tutor sobre victimización?", "response": "La victimización permite estudiar delitos sufridos por personas aunque no siempre sean denunciados."}
+{"instruction": "Instrucción 128: responde de forma académica qué es subregistro.", "response": "El subregistro limita la medición real de la criminalidad porque no todos los delitos se reportan."}
+{"instruction": "Ejercicio 129: menciona la función de violencia urbana en el sistema RAG.", "response": "La violencia urbana se relaciona con desigualdad, impunidad, crimen organizado y debilidad institucional."}
+{"instruction": "Caso 130: el usuario pregunta por seguridad pública, ¿qué contestas?", "response": "La seguridad pública se aborda con documentos ENSU, ENVIPE, INEGI y ONC."}
+{"instruction": "Pregunta de práctica 131: explica alucinación con palabras simples.", "response": "Una alucinación ocurre cuando el modelo inventa información sin respaldo documental."}
+{"instruction": "Consulta 132: ¿qué sabe el tutor sobre router?", "response": "El router clasifica la consulta para decidir si usar corpus, reglas o rechazo."}
+{"instruction": "Instrucción 133: responde de forma académica qué es pregunta híbrida.", "response": "Una pregunta híbrida mezcla aspectos técnicos del sistema con información de los documentos."}
+{"instruction": "Ejercicio 134: menciona la función de pregunta documental en el sistema RAG.", "response": "Una pregunta documental busca información contenida en los PDFs del corpus."}
+{"instruction": "Caso 135: el usuario pregunta por pregunta técnica, ¿qué contestas?", "response": "Una pregunta técnica trata sobre el funcionamiento del sistema o sus componentes."}
+{"instruction": "Pregunta de práctica 136: explica búsqueda semántica con palabras simples.", "response": "La búsqueda semántica recupera texto por significado y no solo por palabras exactas."}
+{"instruction": "Consulta 137: ¿qué sabe el tutor sobre búsqueda léxica?", "response": "La búsqueda léxica depende de coincidencias exactas de palabras."}
+{"instruction": "Instrucción 138: responde de forma académica qué es base vectorial.", "response": "La base vectorial almacena embeddings para permitir búsqueda semántica rápida."}
+{"instruction": "Ejercicio 139: menciona la función de similarity score en el sistema RAG.", "response": "El similarity score mide qué tan parecido es un fragmento a la pregunta."}
+{"instruction": "Caso 140: el usuario pregunta por recuperación contextual, ¿qué contestas?", "response": "La recuperación contextual selecciona evidencia tomando en cuenta el sentido de la pregunta."}
+{"instruction": "Pregunta de práctica 141: explica limpieza de texto con palabras simples.", "response": "La limpieza de texto elimina ruido para mejorar embeddings y recuperación."}
+{"instruction": "Consulta 142: ¿qué sabe el tutor sobre neutralidad académica?", "response": "La neutralidad académica evita sesgos y mantiene respuestas objetivas."}
+{"instruction": "Instrucción 143: responde de forma académica qué es preguntas predictivas.", "response": "Las preguntas predictivas se evitan si no hay evidencia verificable en el corpus."}
+{"instruction": "Ejercicio 144: menciona la función de preguntas políticas en el sistema RAG.", "response": "Las preguntas políticas se responden con cautela o se rechazan si no hay evidencia suficiente."}
+{"instruction": "Caso 145: el usuario pregunta por delitos de alto impacto, ¿qué contestas?", "response": "Los delitos de alto impacto aparecen principalmente en reportes del ONC."}

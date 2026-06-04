@@ -1,0 +1,32 @@
+{
+  "name": "asistente-rnn-codigo",
+  "displayName": "Asistente RNN Codigo",
+  "description": "Autocompletador de codigo C usando RNN Vanilla local.",
+  "version": "1.0.0",
+  "publisher": "brayan",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:asistenteRNN.insertarSugerencia"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "asistenteRNN.insertarSugerencia",
+        "title": "Asistente RNN: Insertar sugerencia"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "asistenteRNN.insertarSugerencia",
+        "key": "ctrl+alt+r",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}

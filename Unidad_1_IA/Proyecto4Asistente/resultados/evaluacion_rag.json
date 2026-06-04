@@ -1,0 +1,888 @@
+[
+    {
+        "id": "Q1",
+        "nivel": "Nivel 1",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "¿Cuáles son las tres entidades federativas con mayor índice de homicidios dolosos según los datos más recientes incluidos en el corpus?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 60,
+                "texto": "análisis mostró dos aspectos relevantes. Por un lado, se encontró que  la mitad de los homicidios ocurren en menos de 5% de los municipios;  por otro, se evidenció que las tasas de homicidio se concentran en tres  regiones específicas del territorio nacional, las cuales se han modificado,  tanto en extensión como en magnitud.  INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 1
+            },
+            {
+                "numero": 2,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 47,
+                "texto": "con mayor concentración de homicidios (MCH), es decir, 14 munici - pios y, en menor medida, por 195 municipios que no tienen grandes  concentraciones de homicidios, pero que contribuyeron al incremento  nacional (CNMCH) (Mapa 2.13 y Anexos 2.8 y 2.9). 60 Spencer Chainey y Joana Monteiro, “The dispersion of crime concentration during a period of crime increase”, Security Journal, (enero 2019): 1-18. INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 1
+            },
+            {
+                "numero": 3,
+                "pdf": "inegi_homicidios2024.pdf",
+                "pagina": 2,
+                "texto": "que tuvieron, al menos, un registro de defunción por agresión (presunto homicidio). Esta  publicación incluye los homicidios identificados  en el proceso de confronta con la  Secretaría de Salud para este grupo de defunciones, mismo que continúa en curso.        Concluye",
+                "coincidencias": 1
+            },
+            {
+                "numero": 4,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 9,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  3 Una característica de los homicidios en México es que se distribuyen de  manera heterogénea en el territorio nacional, concentrándose en ciertas  entidades que, además de exhibir las tasas más altas, presentan también  los mayores aumentos. Estas entidades han delineado la tendencia de  la tasa nacional particularmente en la última década. Por su parte, se  distingue que las ocho entidades con las tasas de homicidio más bajas  se han mantenido en niveles entre dos y 11 homicidios por cada cien mil  habitantes desde 1990 hasta 2017. En particular, el estado de México concentró 21.3% del total de  homicidios de mujeres del país y 14.4% del total de homicidios de  hombres durante el periodo de análisis; proporción que ha disminuido",
+                "coincidencias": 2
+            },
+            {
+                "numero": 5,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 28,
+                "texto": "38 Spencer Chainey y Jerry R atcliffe, op. cit. 39 L os tipos bajo-alto y alto-bajo serán descritos y analizados en el apartado 3.5, mediante el análisis de contagio de homicidios de un municipio a  otro. 40 L uc Anselin, “Local Indicators of Spatial Association-LISA”, Geographical Analysis, Vol. 27, No. 2. (Estados Unidos de América: 1995): 93-115. Índice Global de Moran de la tasa municipal de homicidios Serie anual de 1990 a 2017 INEGI. Estadísticas de Mortalidad,  1990-2017. INEGI. Censo de Población y Vivienda,  1990-2005. CONAPO. Proyecciones de la  Población, 2010-2030. Fuente: GRÁFICA 2.2 0.28 0.28 0.48 0.0 0.2 0.4 0.6 0.8 1.0 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017",
+                "coincidencias": 2
+            },
+            {
+                "numero": 6,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 49,
+                "texto": "Security Journal ,  (2019): 1-18. En resumen, a partir del análisis de contagio de homicidios y de  las regiones emergentes, se puede concluir que el incremento de los  homicidios a nivel nacional se ha dado principalmente por mecanismos  de intensificación de regiones históricamente violentas, es decir, por  aquellos municipios que concentran la mayor cantidad de homicidios,  y en menor medida por el surgimiento de nuevas regiones o por el  contagio directo entre municipios.  El incremento de  los homicidios a  nivel nacional se ha  dado principalmente  por mecanismos  de intensificación  de regiones  históricamente  violentas INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 1
+            },
+            {
+                "numero": 7,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 34,
+                "texto": "caliente de homicidios fueron: Moris, Guadalupe y Calvo, Ocampo,  y Chínipas (Chihuahua); Guanaceví y Tamazula (Durango); Sinaloa  y Choix (Sinaloa), los cuales persistieron durante 10 años. Dichos  municipios tuvieron una tasa promedio de 82.2 homicidios por cada  cien mil habitantes (Anexo 2.6). Esto coincide con los resultados de otras investigaciones que señalan  que las regiones con altos índices de violencia perduran en el tiempo,  principalmente en el norte del país, aunque su extensión ha cambiado. 43   Más allá de identificar cuántos años un municipio fue parte de una  región caliente, es importante analizar las zonas donde el comporta - miento temporal de los homicidios es estable. Este paso permite dis - tinguir qué regiones son continuamente problemáticas de aquellas que",
+                "coincidencias": 2
+            },
+            {
+                "numero": 8,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 45,
+                "texto": "homicidios se mantiene prácticamente en 0, es decir, que la proporción  de municipios cuyo incremento de homicidios contribuye al aumento  nacional, es menor a 1%. No obstante, cabe señalar los aumentos en  el índice ocurridos a partir de 2008; el primero, llevó a un máximo en  2009 y el segundo, es un crecimiento sostenido desde 2015. Lo anterior  Índice de Dispersión Técnica que mide la dispersión relativa de homicidios en una  región o país a partir de un proceso que consiste en ordenar  las áreas que integran esa región de acuerdo al nivel de  cambio de un periodo a otro; posteriormente, se elimina el  área de clasificación más alta de la lista y se recalcula el nivel  de homicidios para la región con n - 1 áreas, hasta que solo  queda un área. Se considera que un área contribuye con",
+                "coincidencias": 2
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.025,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.026,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "entidades",
+                "federativas",
+                "índice",
+                "homicidios",
+                "dolosos",
+                "recientes"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q2",
+        "nivel": "Nivel 1",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "¿Qué organizaciones, cárteles o grupos delictivos se mencionan con mayor frecuencia operando en la región de Tierra Caliente?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 28,
+                "texto": "al interior, pero heterogéneo a nivel intergrupal sin tomar en cuenta distancias entre áreas metropolitanas. Para mayor referencia, véase GitHub  Pages, “GeoDa. An Introduction to Spatial Data Analysis”, GeoDa Center, https://geodacenter.github.io/workbook/7b_clusters_2/lab7b.html#k- means (Fecha de consulta: 1 de octubre de 2019). Se construyeron  cinco grupos de  áreas metropolitanas  en función de los  valores de los  subíndices por delito  para el año 2018 INEGI. En números. Documentos de análisis y estadísticas. Cuaderno 16. Los delitos en México. 2019.",
+                "coincidencias": 1
+            },
+            {
+                "numero": 2,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 32,
+                "texto": "28 en la seguridad interior del país. 84 Por tanto, estas  instituciones militares pueden ser identificables como  autoridades de seguridad pública.85 Una vez que se ha alterado la paz pública, es ne - cesario contar con instituciones que se encarguen de  aplicar funciones correctivas por medio de un sistema  integral de justicia. La Constitución Política de los Es - tados Unidos Mexicanos (cpeum ) faculta al Ministerio  Público como órgano del Estado encargado de realizar  la función de procuración de justicia para llevar a cabo  la investigación y persecución de los delitos del fuero  común, mediante el ejercicio de la acción penal ante la  autoridad jurisdiccional, con el auxilio de la policía que  está bajo su autoridad. 86 A su vez la Fiscalía General",
+                "coincidencias": 0
+            },
+            {
+                "numero": 3,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 31,
+                "texto": "una situación de inseguridad y delincuencia (esta última  solo le aplica a las policías).  Los once tipos de autoridades sobre los cuales  se indaga son Policía de Tránsito Municipal, Policía  Preventiva Municipal, Policía Estatal, Guardia Nacio - nal, Policía Ministerial, Judicial o de Investigación,  Ministerio Público ( mp) y Fiscalía Estatal, Fiscalía  General de la República ( fgr), Ejército, Fuerza Aé- rea Mexicana, Marina y jueces. La característica que  tienen en común estas instituciones es que forman  parte del esquema integral del proceso de seguridad  pública y justicia penal. Este esquema está confor - mado por cuatro componentes: seguridad pública,  procuración de justicia, impartición de justicia y el  sistema penitenciario.",
+                "coincidencias": 0
+            },
+            {
+                "numero": 4,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 31,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  26 Grupo 3  Este grupo se conforma por ocho zonas metropolitanas y se carac- teriza por su gran heterogeneidad delictiva, pese a que en el índice  general cinco áreas se encuentran en el rango medio y tres en el rango  bajo. Si bien, este grupo tiene un perfil delictivo similar al Grupo 1,  donde el fraude y la extorsión ocupan el primer lugar, las amenazas y  lesiones el segundo y con bajos niveles de robos en la calle o transporte  público, en las zonas del Grupo 2, la severidad de estos delitos es  mayor; de hecho, en estas áreas se encuentran los valores más altos de  fraude y extorsión entre las áreas metropolitanas del país. En general, la  severidad de todos los delitos analizados se intensifica en estas áreas,",
+                "coincidencias": 0
+            },
+            {
+                "numero": 5,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 37,
+                "texto": "alto a alto.  A partir de este índice, se encontraron convergencias y divergencias  delictivas entre las 33 áreas metropolitanas del país que permitieron  la construcción de grupos y la identificación de territorios con mayor y  menor severidad intragrupal e intergrupal. Como parte de las propiedades del índice, se pudo profundizar  el análisis por delito. De manera complementaria al análisis basado  en incidencia, se mostró un ordenamiento distinto que proporciona  alternativas a considerar en el diseño, implementación y evaluación de  políticas en materia de seguridad. Así, el índice tiene como principal  cualidad añadir una perspectiva que puede ser replicable a otros delitos  de interés y en el tiempo, con lo cual se pretende aportar información",
+                "coincidencias": 1
+            },
+            {
+                "numero": 6,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 41,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  37 CONCLUSIONES A nte los crecientes problemas de seguridad pública, la  heterogeneidad delictiva del país y los recursos limitados,  se requieren criterios complementarios a los análisis tradi- cionales de frecuencia delictiva para identificar las características  de los problemas a nivel regional, a fin de procurar intervenciones  públicas específicas basadas en evidencia.  Para contribuir con esta labor, se propuso un  Índice de severidad  delictiva como medida que conjunta la frecuencia y el daño que causan  seis principales categorías de delitos: homicidio, fraude y extorsión,  amenazas y lesiones, robo a casa habitación, robo o asalto en calle o  transporte público y robo total o parcial de vehículo.",
+                "coincidencias": 1
+            },
+            {
+                "numero": 7,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 111,
+                "texto": "petición de las víctimas, ofendidos en particular y  de la sociedad en general. Fiscalía General Estatal. Institución que se en - carga de procurar la justicia y proveer las con - diciones de paz social en el estado (entidad  federativa); anteriormente era conocida como  Agencia del Ministerio Público.  Fractura. Es la rotura completa o parcial del hue- so o del cartílago, causada por una fuerza externa  ya sea directa o indirecta. Fraude al consumidor. Es el delito en el que, por  medio de engaños, el delincuente se aprovecha  de una persona para que entregue dinero a cam- bio de recibir un bien o un servicio que no se en - trega según se acordó. Fraude bancario. Es un delito contra el patri - monio, en el que utilizando la información ban - caria o comercial de una persona se realizan",
+                "coincidencias": 0
+            },
+            {
+                "numero": 8,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 51,
+                "texto": "menor número de municipios con un cociente muy alto de 193 municipios  y en 2012, se alcanzó el número máximo de 352 (Gráfica 3.1). Como se observa en el Mapa 3.1, la distribución territorial de los  cocientes de localización de homicidios de mujeres muestra patrones  espaciales heterogéneos. Durante el periodo de 1990 a 2007, los mu- nicipios con un cociente de localización muy alto se encontraban en  19 estados: Baja California Sur, Coahuila de Zaragoza, Nuevo León, Ta- maulipas, Zacatecas, Jalisco, Guanajuato, Querétaro, Hidalgo, estado  Los cocientes de  localización relevan  en dónde hay mayor  proporción de víctimas  de homicidio de  mujeres, niñas  y niños INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 0
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.016,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.016,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "organizaciones",
+                "cárteles",
+                "grupos",
+                "delictivos",
+                "mencionan",
+                "frecuencia",
+                "operando",
+                "región",
+                "tierra",
+                "caliente"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q3",
+        "nivel": "Nivel 1",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "¿Cuáles son las cifras oficiales reportadas sobre el desplazamiento forzado interno a causa de la violencia durante el último sexenio documentado?",
+        "respuesta": "Respuesta parcial del tutor:\n\n1. Hallazgo principal\nEl corpus recuperado contiene evidencia relacionada con la pregunta, pero no permite contestar todos los elementos solicitados de forma completa.\n\n2. Evidencia documental recuperada\n- [PDF: onc_anual_2025.pdf | Página: 57] El documento señala: \"Sinaloa Ha surgido desplazamiento  forzado de familias por la  violencia, particularmente en  municipios como  Badiraguato, donde  comunidades enteras han  abandonado sus hogares  ante la presencia de grupos  armados y los  enfrentamientos por el  control territorial (cifras  oficiales registran más de  mil familias desplazadas ...\"\n- [PDF: onc_anual2025.pdf | Página: 57] El documento señala: \"Sinaloa Ha surgido desplazamiento  forzado de familias por la  violencia, particularmente en  municipios como  Badiraguato, donde  comunidades enteras han  abandonado sus hogares  ante la presencia de grupos  armados y los  enfrentamientos por el  control territorial (cifras  oficiales registran más de  mil familias desplazadas ...\"\n\n3. Interpretación académica\nLa evidencia anterior permite identificar información relacionada con el tema, pero no autoriza ampliar la respuesta con datos externos, ejemplos no citados o conclusiones no contenidas en el corpus.\n\n4. Límite de la respuesta\nPor lo tanto, la respuesta debe considerarse parcial. Para una respuesta completa sería necesario incorporar documentos que traten directamente todos los elementos de la pregunta.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "onc_anual_2025.pdf",
+                "pagina": 57,
+                "texto": "Sinaloa Ha surgido desplazamiento  forzado de familias por la  violencia, particularmente en  municipios como  Badiraguato, donde  comunidades enteras han  abandonado sus hogares  ante la presencia de grupos  armados y los  enfrentamientos por el  control territorial (cifras  oficiales registran más de  mil familias desplazadas  durante 2025). Fuente: Elaboración del ONC con base en el SESNSP con datos descargados  el 19 de enero de 2026",
+                "coincidencias": 5
+            },
+            {
+                "numero": 2,
+                "pdf": "onc_anual2025.pdf",
+                "pagina": 57,
+                "texto": "Sinaloa Ha surgido desplazamiento  forzado de familias por la  violencia, particularmente en  municipios como  Badiraguato, donde  comunidades enteras han  abandonado sus hogares  ante la presencia de grupos  armados y los  enfrentamientos por el  control territorial (cifras  oficiales registran más de  mil familias desplazadas  durante 2025). Fuente: Elaboración del ONC con base en el SESNSP con datos descargados  el 19 de enero de 2026",
+                "coincidencias": 5
+            },
+            {
+                "numero": 3,
+                "pdf": "inegi_homicidios2024.pdf",
+                "pagina": 2,
+                "texto": "que tuvieron, al menos, un registro de defunción por agresión (presunto homicidio). Esta  publicación incluye los homicidios identificados  en el proceso de confronta con la  Secretaría de Salud para este grupo de defunciones, mismo que continúa en curso.        Concluye",
+                "coincidencias": 0
+            },
+            {
+                "numero": 4,
+                "pdf": "inegi_homicidios2024.pdf",
+                "pagina": 1,
+                "texto": "Catálogo Único de Claves de Áreas Geoestadísticas Estatales, Municipales y  Localidades  Clasificación Mexicana de Ocupaciones, 1998  Sistema Nacional de Clasificaciones de Ocupaciones (SINCO)  Cobertura  temporal  A partir de 1990, la información definitiva está disponible en formato de microdatos y  de tabulados interactivos . La información preliminar anual se publica en tabulados  interactivos.  Cobertura  geográfica    Se captan las defunciones registradas en todo el país en el Sistema de Registro Civil,  así como las defunciones accidentales y violentas en las que intervienen el Servicio  Médico Forense y el Ministerio Público.  Desglose  geográfico Entidad federativa, municipio o demarcación territorial y localidad  Procedimiento  de captación  - Formato de captación:",
+                "coincidencias": 0
+            },
+            {
+                "numero": 5,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 50,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  44 Dispersión en áreas de concentración de homicidios De 2014 a 2017 MAPA 2.13 Fuente: Elaboración propia con datos de INEGI.  Estadísticas de Mortalidad, 1990-2017.            INEGI. Censo de Población y Vivienda,  1990-2005.                        Áreas de mayor concentración de  homicidios Dispersión en áreas de concentración Áreas que contribuyenron al incremento nacional pero no tienen grandes  concentraciones de homicidios No signiﬁcativo INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 0
+            },
+            {
+                "numero": 6,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 44,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  38 2.6 Regiones emergentes de homicidios Para explicar el aumento en la tasa nacional de homicidios y detectar  cambios en los patrones geográficos de homicidios (y otros delitos), no  basta con identificar en dónde y qué tan estable es la violencia, o medir  el crecimiento de su magnitud. Para ello, se requiere detectar qué zonas  comienzan a mostrar señales de empeoramiento y con ello, identificar  hacia dónde se está dispersando el problema. 55,56,57 Identificar regiones con problemas emergentes resulta especialmente  relevante para priorizar áreas de prevención y contención.58 Es importante  precisar que las áreas de mayor probabilidad de ocurrencia (regiones  calientes) no son necesariamente las que registran mayores aumentos",
+                "coincidencias": 0
+            },
+            {
+                "numero": 7,
+                "pdf": "onc_dai_2025_t3.pdf",
+                "pagina": 3,
+                "texto": "Presentación 4 El Observatorio Nacional Ciudadano presenta este nuevo análisis trimestral con el objetivo de contribuir a la comprensión clara y objetiva de la violencia que enfrenta México . Más allá de contabilizar delitos, este ejercicio busca identificar tendencias, advertir riesgos y ofrecer evidencia verificable que sirva a la ciudadanía, a los medios de comunicación, a la academia y a quienes toman decisiones públicas . El tercer trimestre de 2025 muestra un escenario complejo . Por un lado, se registran reducciones relevantes en delitos como homicidio doloso, homicidio culposo y secuestro, tanto en la comparación trimestral como anual . La extorsión, aunque presenta descensos moderados, continúa afectando de manera cotidiana a personas y",
+                "coincidencias": 0
+            },
+            {
+                "numero": 8,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 34,
+                "texto": "miento temporal de los homicidios es estable. Este paso permite dis - tinguir qué regiones son continuamente problemáticas de aquellas que  solamente tienen una influencia temporal y limitada (comportamiento  fluido) en el problema nacional del incremento de homicidios.44 En pocas  palabras, es preciso explorar si dichas concentraciones son persistentes  o inestables en el tiempo. 43 David R amírez-De-Garay, “Las barbas del vecino. Los patrones de difusión del crimen violento en México (1990-2010)”, Foro Internacional 226,  Vol. LVI, No. 4, (2016): 977-1018. 44 Se recomienda restar dos errores estándar a la media, para calcular el coeficiente de variación, a fin de obtener un cálculo más conservador de",
+                "coincidencias": 0
+            }
+        ],
+        "fuentes_relevantes": [
+            {
+                "numero": 1,
+                "pdf": "onc_anual_2025.pdf",
+                "pagina": 57,
+                "texto": "Sinaloa Ha surgido desplazamiento  forzado de familias por la  violencia, particularmente en  municipios como  Badiraguato, donde  comunidades enteras han  abandonado sus hogares  ante la presencia de grupos  armados y los  enfrentamientos por el  control territorial (cifras  oficiales registran más de  mil familias desplazadas  durante 2025). Fuente: Elaboración del ONC con base en el SESNSP con datos descargados  el 19 de enero de 2026",
+                "coincidencias": 5
+            },
+            {
+                "numero": 2,
+                "pdf": "onc_anual2025.pdf",
+                "pagina": 57,
+                "texto": "Sinaloa Ha surgido desplazamiento  forzado de familias por la  violencia, particularmente en  municipios como  Badiraguato, donde  comunidades enteras han  abandonado sus hogares  ante la presencia de grupos  armados y los  enfrentamientos por el  control territorial (cifras  oficiales registran más de  mil familias desplazadas  durante 2025). Fuente: Elaboración del ONC con base en el SESNSP con datos descargados  el 19 de enero de 2026",
+                "coincidencias": 5
+            }
+        ],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.02,
+            "latencia_generacion_llm_seg": 0.0,
+            "latencia_total_seg": 0.021,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 2,
+            "keywords": [
+                "cifras",
+                "oficiales",
+                "desplazamiento",
+                "forzado",
+                "interno",
+                "causa",
+                "durante",
+                "último",
+                "sexenio"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "respuesta_parcial_rapida"
+        }
+    },
+    {
+        "id": "Q4",
+        "nivel": "Nivel 2",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "Según los documentos, ¿cuáles son las principales causas socioeconómicas que los autores asocian directamente al incremento de la violencia urbana?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 49,
+                "texto": "Security Journal ,  (2019): 1-18. En resumen, a partir del análisis de contagio de homicidios y de  las regiones emergentes, se puede concluir que el incremento de los  homicidios a nivel nacional se ha dado principalmente por mecanismos  de intensificación de regiones históricamente violentas, es decir, por  aquellos municipios que concentran la mayor cantidad de homicidios,  y en menor medida por el surgimiento de nuevas regiones o por el  contagio directo entre municipios.  El incremento de  los homicidios a  nivel nacional se ha  dado principalmente  por mecanismos  de intensificación  de regiones  históricamente  violentas INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 1
+            },
+            {
+                "numero": 2,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 30,
+                "texto": "de desorden social y de inseguridad (Véase Sampson, Robert,  Stephen W. Raudenbush & Felton Earls. (1997). «Neighborhoods  and Violent Crime: A Multilevel Study of Collective Efficacy», Science,  New Series. Vol. 227. No. 5328. American Association for the Advan- cement of Science, pp. 918-924). En muchas de las áreas marginadas de los centros  urbanos, la inseguridad de las calles provoca que la  población de clase media evite visitar dichas zonas, 72  lo que intensifica un fenómeno de encierro o de «priva- tización de la seguridad» por parte de las clases altas y  algunos sectores de las clases medias. Esta tendencia  daña el tejido social y deja al margen de la seguridad  pública a una importante parte de la población profun- dizando las divisiones sociales. De esta manera, la pri-",
+                "coincidencias": 0
+            },
+            {
+                "numero": 3,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 43,
+                "texto": "Además del contagio, existen otros mecanismos que pueden  complicar el fenómeno de homicidios en un municipio, ya sea por el  aumento de homicidios en regiones históricamente violentas, ya por el  surgimiento de nuevas áreas con problemas de homicidios. 54 David Ramírez-De-Garay, op. cit. Casos de contagio municipal de homicidios Serie anual de 1991 a 2017 GRÁFICA 2.5 0 3 6 9 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 Nota: no se incluye el año 1990 debido a que  el contagio sucede de un año a otro, por lo que  puede analizarse hasta el año siguiente. INEGI. Estadísticas de Mortalidad,  1990-2017.  INEGI. Censo de Población y Vivienda,  1990-2005. CONAPO. Proyecciones de la  Población, 2010-2030.",
+                "coincidencias": 0
+            },
+            {
+                "numero": 4,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 40,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  34 Riesgo de contagio de homicidios Los municipios que tienen alto riesgo de ser contagiados  por violencia homicida son los que presentan una tasa de  homicidios estadísticamente significativa baja que comparten  frontera con al menos un municipio con tasa estadísticamente  significativa alta, es decir, hay una autocorrelación espacial  de tipo bajo-alto.  Por su parte, los municipios que corren mayor riesgo de  contagiar violencia homicida son aquellos que presentaron  una alta tasa de homicidios y que tuvieron frontera con al  menos un municipio con una baja tasa, esto es, que se auto - correlacionen espacialmente de tipo alto-bajo. Municipios con alto riesgo de contagio y de contagiar homicidios Serie anual de 1990 a 2017",
+                "coincidencias": 0
+            },
+            {
+                "numero": 5,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 46,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  40 indica que los municipios que pueden llegar a representar problemas  emergentes de homicidios van al alza, son más los municipios que no  presentan este aumento emergente y que por lo tanto no contribuyen al  aumento de la tasa nacional de homicidios. Es decir, el aumento de la  tasa nacional de homicidios en los últimos tres años es alimentado por  municipios específicos. Al descomponer el índice de dispersión de homicidios para cada  municipio, es posible apreciar con mayor detalle el aumento del  porcentaje de municipios que contribuye al alza nacional de homicidios.  Se observa que, de 2006 a 2007, la contribución de todos los  municipios fue negativa, mientras que a partir de 2010 a 2011 aumentó",
+                "coincidencias": 0
+            },
+            {
+                "numero": 6,
+                "pdf": "ensu_2025_septiembre.pdf",
+                "pagina": 21,
+                "texto": "XI. VIOLENCIA EN EL ENTORNO FAMILIAR EN HOGARES    Para los últimos 12 meses —de octubre de 202 4 a septiembre de 202 5—, se estima que en  8.5 % de los hogares en áreas urbanas de interés hubo algún tipo de violencia12en el entorno  familiar. En 23.8 % de las ocasiones, las personas involucradas eran menores de edad    (ver gráfica 16).              1  Incluye las siguientes situaciones: le han ofendido o humillado (por ejemplo, insultos que le hicieron sentir menos o le hicieron sentir mal);  le han corrido de su casa o amenazado con correrlo(a); le han golpeado o agredido físicamente, por ejemplo, pellizcado, jalado el cabello,  empujado, jaloneado, abofeteado, pateado, golpeado con el puño o aventado algún objeto ; le han atacado o agredido con un cuchillo,",
+                "coincidencias": 1
+            },
+            {
+                "numero": 7,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 61,
+                "texto": "crónicamente han presentado altos niveles de homicidios. Adicionalmente, se encontró que el contagio de la violencia homicida  de un municipio a otro con baja tasa es un fenómeno poco común,  que ocurre en un número reducido de municipios, particularmente al  inicio del periodo de incrementos del número de homicidios. Una vez  contagiados, las tasas de homicidios de estos municipios no disminuyen  significativamente, sino que incluso pueden presentar aumentos.  Aunque el fenómeno de contagio homicida entre un municipio y otro  sea poco común, sí se identificó un aumento en el número de municipios  con problemas emergentes, esto es, municipios que comienzan a  evidenciar señales de empeoramiento, particularmente durante el trienio",
+                "coincidencias": 1
+            },
+            {
+                "numero": 8,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 47,
+                "texto": "con mayor concentración de homicidios (MCH), es decir, 14 munici - pios y, en menor medida, por 195 municipios que no tienen grandes  concentraciones de homicidios, pero que contribuyeron al incremento  nacional (CNMCH) (Mapa 2.13 y Anexos 2.8 y 2.9). 60 Spencer Chainey y Joana Monteiro, “The dispersion of crime concentration during a period of crime increase”, Security Journal, (enero 2019): 1-18. INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 1
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.019,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.02,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "causas",
+                "socioeconómicas",
+                "autores",
+                "asocian",
+                "directamente",
+                "incremento",
+                "urbana"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q5",
+        "nivel": "Nivel 2",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "Contrasta las estrategias de seguridad pública mencionadas en el corpus. ¿Qué diferencias de enfoque existen entre la militarización y las políticas de prevención social?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 31,
+                "texto": "ción de la integridad física y moral de la población. 81 La  segunda vertiente son las intervenciones que realiza la  policía y consiste en velar por el mantenimiento del orden  público y la seguridad de los ciudadanos cuando la paz  pública ha sido alterada. 82  Con respecto al Ejercito y a la Fuerza Aérea Mexica- na, la ley orgánica que les regula establece que su prin- cipal función es el defender la integridad, independencia  y soberanía de la nación de amenazas externas, pero  también las faculta para efectuar operaciones de apoyo  a las instituciones de seguridad pública y garantizar la  seguridad interior. De forma complementaria, deben au- xiliar a la población civil en caso de necesidades públi- cas y de prestar ayuda para el mantenimiento del orden  en caso de desastre.",
+                "coincidencias": 0
+            },
+            {
+                "numero": 2,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 32,
+                "texto": "28 en la seguridad interior del país. 84 Por tanto, estas  instituciones militares pueden ser identificables como  autoridades de seguridad pública.85 Una vez que se ha alterado la paz pública, es ne - cesario contar con instituciones que se encarguen de  aplicar funciones correctivas por medio de un sistema  integral de justicia. La Constitución Política de los Es - tados Unidos Mexicanos (cpeum ) faculta al Ministerio  Público como órgano del Estado encargado de realizar  la función de procuración de justicia para llevar a cabo  la investigación y persecución de los delitos del fuero  común, mediante el ejercicio de la acción penal ante la  autoridad jurisdiccional, con el auxilio de la policía que  está bajo su autoridad. 86 A su vez la Fiscalía General",
+                "coincidencias": 0
+            },
+            {
+                "numero": 3,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 33,
+                "texto": "29 razonamientos y evaluaciones respecto al funciona - miento de las instituciones. 89  En este sentido, la confianza en las instituciones  encargadas de la seguridad pública puede ser enten - dida como la expectativa de la ciudadanía en que estas  ajusten su conducta a los ordenamientos jurídicos co - rrespondientes, principalmente, al artículo 21 Constitu- cional, respecto a la responsabilidad de salvaguardar la  vida, las libertades, la integridad y el patrimonio de las  personas, así como contribuir a la generación y preser- vación del orden público y la paz social, respetando en  todo momento los derechos humanos. Se espera, ade- más, que su actuar sea imparcial, justo y respetuoso,  entre otras virtudes morales. 90 Siguiendo este argumento, al analizar la construcción",
+                "coincidencias": 1
+            },
+            {
+                "numero": 4,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 13,
+                "texto": "18 años y más sobre la seguridad pública, así como  la efectividad de la autoridad y captar experiencias  de corrupción, además, incorpora elementos como el  de atestiguación de conductas delictivas o antisocia - les, el desempeño de las autoridades de seguridad,  los cambios en las rutinas de la población por temor a  convertirse en víctimas de la delincuencia, prevalencia  de conflictos y conductas antisociales, desempeño gu- bernamental, victimización en el hogar y las formas de  enterarse de la situación de seguridad. Tasa de víctimas de delito por cada 100 000 habitantes 2010-2024                     Gráfica 1.6.1 Estados Unidos Mexicanos 23 993 24 317 27 337 28 224 28 200 28 202 28 788 29 746 28 269 24 849 23 520 24 207 22 587 23 323 24 135 15 000 17 000 19 000 21 000 23 000 25 000",
+                "coincidencias": 1
+            },
+            {
+                "numero": 5,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 31,
+                "texto": "mado por cuatro componentes: seguridad pública,  procuración de justicia, impartición de justicia y el  sistema penitenciario. Dentro de los ámbitos de sus competencias, las distin- tas policías son las encargadas de garantizar el «mante- nimiento de la paz pública mediante la obediencia de la  Ley, en un ambiente de pleno respeto a la dignidad hu- mana y de los derechos humanos de las personas». 80 El  ejercicio de la función de seguridad pública que llevan a  cabo las policías tiene dos vertientes. La primera consiste  en las acciones de vigilancia entendidas como las tareas  realizadas para garantizar la tranquilidad, paz y protec- ción de la integridad física y moral de la población. 81 La  segunda vertiente son las intervenciones que realiza la",
+                "coincidencias": 0
+            },
+            {
+                "numero": 6,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 18,
+                "texto": "14 3.2 Teorías de inseguridad y miedo   al delito Antes de presentar las teorías que dan nombre a este  apartado, es importante diferenciar entre la medición  de la seguridad pública y la percepción sobre seguri- dad pública. El primero atiende el servicio de seguridad  prestado por cualquiera de las instituciones que cum - plen con esta función. Los indicadores obtenidos de  esta medición están relacionados con la infraestructura,  los recursos con que cuentan las instituciones para su  trabajo y el ejercicio de sus funciones, las intervencio - nes policiales, la reducción de los índices delictivos, la  impartición y procuración de justicia, así como el fun- cionamiento penitenciario. 39 Por otra parte, la medición de percepción sobre se -",
+                "coincidencias": 0
+            },
+            {
+                "numero": 7,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 27,
+                "texto": "delito, percepción del problema del delito y sus tendencias. Prevención y protección ante  el delito Se abordan los temas de la seguridad y prevención del delito preguntando qué tipo de precauciones utilizan  para protegerse y prevenir el delito. Entre los temas que comúnmente se cubren están la presencia de  disuasivos físicos en el hogar, como alarmas antirrobo, rejas, candados de seguridad, rejas en las ventanas,  perros guardianes, etc. También los comportamientos adoptados para protegerse del delito, como reducir  la frecuencia con la que salen, especialmente de noche, evitar ciertos lugares/áreas, cambiar itinerarios/ rutinas, etcétera. Actitudes generales hacia la  policía Preguntas planteadas para determinar la manera en que la población percibe a las autoridades y sus",
+                "coincidencias": 1
+            },
+            {
+                "numero": 8,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 17,
+                "texto": "preservar las libertades, el orden y la paz públicos y  comprende la prevención especial y general de los de- litos, la sanción de las infracciones administrativas, así  como la investigación y la persecución de los delitos y  la reinserción social del sentenciado […]». 37 Como se establece en la ley reglamentaria en la ma- teria, la seguridad pública comprende diversos procesos,  aunque una característica que resalta en el precepto  legal es lo concerniente a la prevención y atención de  los delitos; entendiendo como un delito, un acto u omi- sión constitutivo de una infracción de la ley penal. 38 Un  delito, dependiendo de su naturaleza, puede afectar  a las personas en su integridad (física o mental), li- bertad o sus bienes.",
+                "coincidencias": 2
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.017,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.017,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "contrasta",
+                "estrategias",
+                "diferencias",
+                "enfoque",
+                "militarización",
+                "políticas",
+                "prevención",
+                "social"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q6",
+        "nivel": "Nivel 2",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "¿Cómo ha evolucionado la tasa de delitos de extorsión a nivel nacional y qué sectores económicos se reportan como los más afectados?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 15,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  10 Con relación a la evolución de los delitos en el tiempo, es posible  observar ciertas tendencias. En los últimos siete años, el homicidio  y los delitos de fraude y extorsión (no incluye vía telefónica), que son  delitos de mayor pena, exhiben una tendencia creciente, mientras que  las tasas de prevalencia de los delitos de amenazas, lesiones, robo  total o parcial de vehículos, que son también los de penas con menor  duración, presentan un comportamiento a la baja. Por su parte, las  prevalencias de robo a casa habitación y robo en la calle o transporte  público se han mantenido prácticamente sin cambios en los últimos  años (Gráfica 2.1). Estos resultados muestran que el perfil delictivo",
+                "coincidencias": 2
+            },
+            {
+                "numero": 2,
+                "pdf": "envipe2025_resultados.pdf",
+                "pagina": 11,
+                "texto": "casos. Para mayor detalle, ver tabulados básicos ENVIPE 2025.   Fuente: INEGI. Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE), 2024 y 2025.    En 19 entidades federativas, el delito más frecuente fue fraude. Siguieron extorsión y robo o  asalto en calle o en el transporte público, en ocho entidades y tres entidades, respectivamente,  mientras que en una entidad lo fueron el robo total o parcial de vehículo  y las amenazas   (ver mapa 1).",
+                "coincidencias": 1
+            },
+            {
+                "numero": 3,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 30,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  25 En este grupo destaca el delito de fraude y extorsión, ya que en  cuatro de las siete áreas se tiene un nivel de severidad medio para  estos delitos. Por el contrario, las zonas metropolitanas de este grupo  tienen índices bajos y muy bajos de severidad de robo o asalto en  calle o transporte público. Esto no significa que este grupo no deba  ser prioridad en materia de política pública, sino que los esfuerzos  deben enfocarse en reducir los índices de severidad, particularmente  del fraude y la extorsión, y evitar que el daño que causan estos delitos  se incremente. Grupo 2  A diferencia del Grupo 1, las cuatro áreas metropolitanas que con- forman este grupo se distinguen por sus altos índices de severidad",
+                "coincidencias": 2
+            },
+            {
+                "numero": 4,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 14,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  9 2 DINÁMICA DELICTIVA  Y HETEROGENEIDAD Para el análisis de la dinámica delictiva, se seleccionaron los delitos  que ocurren con mayor frecuencia de acuerdo con la ENVIPE: robo  total y parcial de vehículo; robo a casa habitación; robo o asalto  en la calle o transporte público; fraude y extorsión 48 y amenazas y  lesiones.49,50 Adicionalmente, se consideró el homicidio que es referente  de los delitos violentos que se viven en el país y que ha sido motivo de  diversas investigaciones en los últimos años. 51 Para este último delito, se usó  la información sobre defunciones que son parte de los registros de estadís- ticas de mortalidad que recaba el INEGI.  Un aspecto para destacar es que la mayoría de los delitos (más de",
+                "coincidencias": 2
+            },
+            {
+                "numero": 5,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 21,
+                "texto": "a su relevancia, el delito de violación sexual. También se seleccionó el delito de extorsión, mis - mo que puede estar relacionado con amenazas, aun - que en este caso con el objeto de obtener ganancias  económicas o para inducir un comportamiento que  una persona normalmente no aceptaría. Con res - pecto al delito de extorsión, es importante destacar  que este solo llega a los registros administrativos del  Ministerio Público o Fiscalía Estatal cuando hubo un  pago por parte de las víctimas. En contraste, en la  Envipe se busca captar el fenómeno desde los in - tentos de extorsión y no solo los actos consumados.  La extorsión es un delito sensible en la percepción  pública por el incremento que han tenido en años re - cientes los intentos de extorsión telefónica, los cua -",
+                "coincidencias": 1
+            },
+            {
+                "numero": 6,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 31,
+                "texto": "fraude y extorsión entre las áreas metropolitanas del país. En general, la  severidad de todos los delitos analizados se intensifica en estas áreas,  incluyendo el homicidio. Grupo 4 A diferencia de los grupos anteriores, las nueve áreas metropolitanas  que conforman el Grupo 4 se caracterizan por tener altos subíndices  por el delito de homicidio. A lo anterior, se añaden subíndices de  severidad media y alta por los delitos de robo total o parcial de vehículo,  amenazas, lesiones, fraude y extorsión. En general, la actividad criminal  en estas áreas metropolitanas es diversa y altamente severa en varios de  los delitos. Índice de severidad delictiva: Grupo 2 2018 CUADRO 3.4 INEGI. Encuesta Nacional de  Victimización y Percepción sobre  Seguridad Pública (ENVIPE) 2019.",
+                "coincidencias": 2
+            },
+            {
+                "numero": 7,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 37,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  32 El aumento generalizado en los niveles de severidad delictiva se  debe a que 45 subíndices de las áreas metropolitanas cambiaron  los niveles de severidad hacia rangos más altos, mientras que solo 39  mostraron disminuciones. Particularmente, el mayor número de mejoras  fueron en los delitos de homicidios y amenazas y lesiones, mientras que  en los otros delitos hubo más zonas que empeoraron, principalmente  en fraude y extorsión, en los que 15 zonas metropolitanas escalaron en  niveles de severidad y solo siete disminuyeron (Cuadro 3.8). Con relación al delito de mayor daño, que es el homicidio, solo se  registraron aumentos en las categorías de severidad en Morelia y Cancún",
+                "coincidencias": 2
+            },
+            {
+                "numero": 8,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 63,
+                "texto": "31 8 24 26 25 33 16 5 Fraude y extorsión Amenazas y lesiones Homicidios 2 2a. parte y última  Lugar en el ranking de las áreas metropolitanas según  la tasa de incidencia por delito 2018 INEGI. Encuesta Nacional de  Victimización y Percepción sobre  Seguridad Pública (ENVIPE) 2019. INEGI. Estadísticas de mortalidad,  2018. CONAPO. Proyecciones de Población,  2010-2030. Fuente: 1 Se reﬁere a la suma de las tasas de incidencia  por cada 100 000 habitantes por delito. 2  S e reﬁere a la tasa de incidencia del total de  homicidios según lugar y año de ocurrencia por  cada 100,000 habitantes. Cifras preliminares. Área  metropolitana INEGI. En números. Documentos de análisis y estadísticas. Cuaderno 16. Los delitos en México. 2019.",
+                "coincidencias": 2
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.019,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.019,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "evolucionado",
+                "delitos",
+                "extorsión",
+                "sectores",
+                "económicos",
+                "reportan",
+                "afectados"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q7",
+        "nivel": "Nivel 2",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "¿Existe alguna diferencia significativa documentada en los tipos de violencia que experimentan las zonas rurales en comparación con las zonas metropolitanas?",
+        "respuesta": "Respuesta parcial del tutor:\n\n1. Hallazgo principal\nEl corpus recuperado contiene evidencia relacionada con la pregunta, pero no permite contestar todos los elementos solicitados de forma completa.\n\n2. Evidencia documental recuperada\n- [PDF: delitos_mexico_inegi.pdf | Página: 34] El documento señala: \"EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  29 2. Existen áreas metropolitanas donde sobresale la incidencia de un cierto tipo de delito. 3. Existen áreas metropolitanas con perfiles delictivos similares, pero con niveles de intensidad diferentes. 4. Hay un conjunto de áreas metropolitanas  donde la convergencia y la alta...\"\n\n3. Interpretación académica\nLa evidencia anterior permite identificar información relacionada con el tema, pero no autoriza ampliar la respuesta con datos externos, ejemplos no citados o conclusiones no contenidas en el corpus.\n\n4. Límite de la respuesta\nPor lo tanto, la respuesta debe considerarse parcial. Para una respuesta completa sería necesario incorporar documentos que traten directamente todos los elementos de la pregunta.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 49,
+                "texto": "Security Journal ,  (2019): 1-18. En resumen, a partir del análisis de contagio de homicidios y de  las regiones emergentes, se puede concluir que el incremento de los  homicidios a nivel nacional se ha dado principalmente por mecanismos  de intensificación de regiones históricamente violentas, es decir, por  aquellos municipios que concentran la mayor cantidad de homicidios,  y en menor medida por el surgimiento de nuevas regiones o por el  contagio directo entre municipios.  El incremento de  los homicidios a  nivel nacional se ha  dado principalmente  por mecanismos  de intensificación  de regiones  históricamente  violentas INEGI. Patrones y tendencias de los homicidios en México. En números. Documentos de análisis y estadísticas. 2019.",
+                "coincidencias": 0
+            },
+            {
+                "numero": 2,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 34,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  29 2. Existen áreas metropolitanas donde sobresale la incidencia de un cierto tipo de delito. 3. Existen áreas metropolitanas con perfiles delictivos similares, pero con niveles de intensidad diferentes. 4. Hay un conjunto de áreas metropolitanas  donde la convergencia y la alta incidencia de múltiples tipos de delitos generan un nivel de afectación mayor, aunque no tengan alta incidencia en delitos de alto impacto como el homicidio. Las conclusiones anteriores indican la pertinencia de explorar estra- tegias diferenciadas de atención al fenómeno delictivo, considerando  los niveles de severidad especialmente para los grupos que presentan  altos subíndices para múltiples delitos. 3.4 Análisis comparativo del índice de severidad  2017-2018",
+                "coincidencias": 3
+            },
+            {
+                "numero": 3,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 25,
+                "texto": "bajas tasas de homicidios. Analizar dichas agrupaciones es el propósito  de la siguiente sección. 2.2 Relación geográfica de los homicidios a nivel  municipal Normalmente se observa que lugares o ubicaciones cercanas tienden  a presentar características similares entre sí. Por el contrario, entre más  lejana se encuentre una ubicación de otra, menores serán las proba - bilidades de que ambas unidades presenten características similares. A  esto se le conoce como dependencia o autocorrelación espacial. 34 Esto  implica que la distribución de los fenómenos, entre ellos la delincuencia  o los homicidios, no ocurre al azar, sino que tienden a concentrarse en  lugares específicos. 34 Spencer Chainey y Jerry Ratcliffe, GIS and Crime Mapping, (Inglaterra: John Wiley & Sons, LTD: 2005): 115-139.",
+                "coincidencias": 0
+            },
+            {
+                "numero": 4,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 61,
+                "texto": "crónicamente han presentado altos niveles de homicidios. Adicionalmente, se encontró que el contagio de la violencia homicida  de un municipio a otro con baja tasa es un fenómeno poco común,  que ocurre en un número reducido de municipios, particularmente al  inicio del periodo de incrementos del número de homicidios. Una vez  contagiados, las tasas de homicidios de estos municipios no disminuyen  significativamente, sino que incluso pueden presentar aumentos.  Aunque el fenómeno de contagio homicida entre un municipio y otro  sea poco común, sí se identificó un aumento en el número de municipios  con problemas emergentes, esto es, municipios que comienzan a  evidenciar señales de empeoramiento, particularmente durante el trienio",
+                "coincidencias": 1
+            },
+            {
+                "numero": 5,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 40,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  34 Riesgo de contagio de homicidios Los municipios que tienen alto riesgo de ser contagiados  por violencia homicida son los que presentan una tasa de  homicidios estadísticamente significativa baja que comparten  frontera con al menos un municipio con tasa estadísticamente  significativa alta, es decir, hay una autocorrelación espacial  de tipo bajo-alto.  Por su parte, los municipios que corren mayor riesgo de  contagiar violencia homicida son aquellos que presentaron  una alta tasa de homicidios y que tuvieron frontera con al  menos un municipio con una baja tasa, esto es, que se auto - correlacionen espacialmente de tipo alto-bajo. Municipios con alto riesgo de contagio y de contagiar homicidios Serie anual de 1990 a 2017",
+                "coincidencias": 1
+            },
+            {
+                "numero": 6,
+                "pdf": "ensu_2025_septiembre.pdf",
+                "pagina": 21,
+                "texto": "XI. VIOLENCIA EN EL ENTORNO FAMILIAR EN HOGARES    Para los últimos 12 meses —de octubre de 202 4 a septiembre de 202 5—, se estima que en  8.5 % de los hogares en áreas urbanas de interés hubo algún tipo de violencia12en el entorno  familiar. En 23.8 % de las ocasiones, las personas involucradas eran menores de edad    (ver gráfica 16).              1  Incluye las siguientes situaciones: le han ofendido o humillado (por ejemplo, insultos que le hicieron sentir menos o le hicieron sentir mal);  le han corrido de su casa o amenazado con correrlo(a); le han golpeado o agredido físicamente, por ejemplo, pellizcado, jalado el cabello,  empujado, jaloneado, abofeteado, pateado, golpeado con el puño o aventado algún objeto ; le han atacado o agredido con un cuchillo,",
+                "coincidencias": 0
+            },
+            {
+                "numero": 7,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 37,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  31 Sin embargo, al analizar los periodos de la evolución homicida en el  país, el comportamiento temporal de los homicidios a nivel municipal  presenta diferencias. Por ejemplo, de 1990 a 2007, se observa la menor  estabilidad en el comportamiento temporal de los homicidios, ya que  durante este periodo, 66.3% de los municipios tuvo una tendencia  estable en la ocurrencia de los homicidios, mientras el resto (33.7%)  registró un comportamiento fluido. Esto puede explicarse porque las  tasas municipales presentaron tanto disminuciones importantes, como  repuntes al alza en algunos años, aun cuando la tasa de homicidios a  nivel nacional decreció de manera constante desde 1993. Al respecto,",
+                "coincidencias": 1
+            },
+            {
+                "numero": 8,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 43,
+                "texto": "Además del contagio, existen otros mecanismos que pueden  complicar el fenómeno de homicidios en un municipio, ya sea por el  aumento de homicidios en regiones históricamente violentas, ya por el  surgimiento de nuevas áreas con problemas de homicidios. 54 David Ramírez-De-Garay, op. cit. Casos de contagio municipal de homicidios Serie anual de 1991 a 2017 GRÁFICA 2.5 0 3 6 9 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 Nota: no se incluye el año 1990 debido a que  el contagio sucede de un año a otro, por lo que  puede analizarse hasta el año siguiente. INEGI. Estadísticas de Mortalidad,  1990-2017.  INEGI. Censo de Población y Vivienda,  1990-2005. CONAPO. Proyecciones de la  Población, 2010-2030.",
+                "coincidencias": 0
+            }
+        ],
+        "fuentes_relevantes": [
+            {
+                "numero": 2,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 34,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  29 2. Existen áreas metropolitanas donde sobresale la incidencia de un cierto tipo de delito. 3. Existen áreas metropolitanas con perfiles delictivos similares, pero con niveles de intensidad diferentes. 4. Hay un conjunto de áreas metropolitanas  donde la convergencia y la alta incidencia de múltiples tipos de delitos generan un nivel de afectación mayor, aunque no tengan alta incidencia en delitos de alto impacto como el homicidio. Las conclusiones anteriores indican la pertinencia de explorar estra- tegias diferenciadas de atención al fenómeno delictivo, considerando  los niveles de severidad especialmente para los grupos que presentan  altos subíndices para múltiples delitos. 3.4 Análisis comparativo del índice de severidad  2017-2018",
+                "coincidencias": 3
+            }
+        ],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.016,
+            "latencia_generacion_llm_seg": 0.0,
+            "latencia_total_seg": 0.016,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 1,
+            "keywords": [
+                "diferencia",
+                "significativa",
+                "tipos",
+                "experimentan",
+                "zonas",
+                "rurales",
+                "comparación",
+                "metropolitanas"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "respuesta_parcial_rapida"
+        }
+    },
+    {
+        "id": "Q8",
+        "nivel": "Nivel 3",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "Con base en las posturas de las ONGs y las fuentes gubernamentales presentes en los textos, ¿cuáles son las principales contradicciones o discrepancias en el registro de víctimas?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "inegi_homicidios2024.pdf",
+                "pagina": 2,
+                "texto": "que tuvieron, al menos, un registro de defunción por agresión (presunto homicidio). Esta  publicación incluye los homicidios identificados  en el proceso de confronta con la  Secretaría de Salud para este grupo de defunciones, mismo que continúa en curso.        Concluye",
+                "coincidencias": 1
+            },
+            {
+                "numero": 2,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 6,
+                "texto": "de las estadísticas de mortalidad, captan y contrastan tanto  información del sistema de salud, mediante los certificados  de defunción, como del sistema de justicia, por medio de  los cuadernos de defunciones de los ministerios públicos.  Las otras fuentes de información, que son los Censos  Nacionales de Procuración de Justicia Estatales, también  del INEGI, y la información sobre incidencia delictiva del  Secretariado Ejecutivo del Sistema Nacional de Seguridad  Pública (SESNSP), reportan información únicamente de los  homicidios registrados en reportes del sistema de justicia. Además, las estadísticas de mortalidad capturan informa - ción sobre las características del hecho y las víctimas siguiendo  metodologías internacionales y la Clasificación Internacional",
+                "coincidencias": 2
+            },
+            {
+                "numero": 3,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 8,
+                "texto": "ño de encuestas nacionales en otros países. Un factor importante que fortaleció la medición del  fenómeno a través de las encuestas de victimización  fue la aparición de la teoría feminista y de la victimo - logía en la década de 1970. Esta última, enfatizó la  importancia de las opiniones de las víctimas respecto  a su victimización y la \"invisibilidad\" de ciertos delitos,  15 En México, la cifra negra se construye con la suma de los actos  delictivos que no son reportados ante el Ministerio Público o  Fiscalía Estatal y que no son objeto de una carpeta de investigación  y, por tanto, no figuran en ninguna estadística. Esta limitación en  los registros administrativos de los ministerios públicos o fiscalías  estatales hace que por medio de estos no se pueda calcular la",
+                "coincidencias": 2
+            },
+            {
+                "numero": 4,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 36,
+                "texto": "32 con esta pregunta sirven, entre otras cosas, para de - terminar si las razones por las cuales la población no  denuncia son de carácter personal o si están relacio- nadas con áreas de oportunidad de los Ministerios Pú- blicos y Fiscalías Estatales.  Experiencia al denunciar Adicional a la información necesaria para los cálculos de  la cifra negra, las variables que conforman esta catego- ría indagan sobre algunos detalles relacionados con la  experiencia de denuncia ante el Ministerio Público o Fis- calía Estatal. La pregunta 1.25 identifica qué ocurrió con  la carpeta de investigación (por ejemplo, si se puso al o  a la delincuente a disposición de un juez o si se recupe- raron los bienes), mientras que la pregunta 1.26 permite  conocer las razones por las cuales el Ministerio Público",
+                "coincidencias": 0
+            },
+            {
+                "numero": 5,
+                "pdf": "inegi_homicidios2024.pdf",
+                "pagina": 1,
+                "texto": "Registro Civil (certificados y actas de defunción), en las Agencias del Ministerio Público  (cuadernos estadísticos de defunción) y , a partir de 2015, la información de presuntos  homicidios que suministran los Servicios Médicos Forenses mediante los certificados de  defunción para las muertes accidentales y violentas.     Los instrumentos referidos corresponden a registros administrativos que incluyen  decesos causados por agentes externos ajenos a la naturaleza de la persona. Cada mes,  el INEGI recopila los registros que las entidades federativas generan sobre el particular. El  certificado de defunción es el principal instrumento de captación. Este contiene las causas  que provocaron la muerte de una persona.     Continúa",
+                "coincidencias": 1
+            },
+            {
+                "numero": 6,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 16,
+                "texto": "seguridad pública y justicia, así como la identificación  de una condición de victimización y el tipo de delito del  que la persona informante y su hogar fueron víctimas.  El segundo consiste en un Módulo sobre victimización  en el que se registran las características de cada una  de las experiencias que la persona informante haya  declarado, así como los aspectos relacionados con la  denuncia del delito y el trato recibido por parte de las  autoridades.  Informante adecuado(a). Residente habitual de la  vivienda seleccionada, de 18 años y más, que co- nozca y esté dispuesto a proporcionar la informa - ción. La persona informante adecuada es quién da  respuesta al Cuestionario principal  hasta la tercera  sección. Informante seleccionado(a). Integrante del hogar",
+                "coincidencias": 1
+            },
+            {
+                "numero": 7,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 61,
+                "texto": "Finalmente, al explorar la distribución geográfica de las víctimas  de homicidio para grupos específicos, mujeres, niñas y niños, se pudo  identificar que, aunque son un evento raro, hay municipios que presentan  una sobrerrepresentación de estas víctimas con respecto al tamaño de  su propio problema homicida. Para el caso de mujeres, se encontraron  regiones calientes de sobrerrepresentación en municipios de la Ciudad  de México, estado de México, Puebla, Veracruz de Ignacio de la Llave,  Chiapas y Tabasco. En el caso de niñas y niños, los municipios que  conforman zonas calientes de alta sobrerrepresentación de estas víctimas  se localizan en Chiapas, Chihuahua, Durango, Guerrero, Hidalgo,  Jalisco, estado de México, Michoacán de Ocampo, Nayarit, Oaxaca,",
+                "coincidencias": 1
+            },
+            {
+                "numero": 8,
+                "pdf": "envipe2025_marco_conceptual.pdf",
+                "pagina": 28,
+                "texto": "victimización Denuncia ante el  Ministerio Público o  Fiscalía Estatal Se determina si el delito declarado por las personas informantes fue  denunciado ante el Ministerio Público o Fiscalía Estatal y si se inició una  carpeta de investigación. También se indaga sobre las razones por las que  se hizo o no se hizo la denuncia. De 1.20 a 1.24 y  1.28  Módulo sobre  victimización  Experiencia al denunciar Se indaga la manera en que la agencia del Ministerio Público o Fiscalía  Estatal se ocupó de la denuncia, la ayuda recibida, el tiempo que tomó  realizar el procedimiento y la percepción del trato recibido por parte de las  autoridades. De 1.25 a 1.27, de  1.29 a 1.32 y 1.36 Módulo sobre  victimización Daños y costos de la  victimización",
+                "coincidencias": 0
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.018,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.018,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "posturas",
+                "fuentes",
+                "gubernamentales",
+                "presentes",
+                "textos",
+                "contradicciones",
+                "discrepancias",
+                "registro",
+                "víctimas"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q9",
+        "nivel": "Nivel 3",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "¿Qué impacto específico tiene la violencia documentada sobre la tasa de deserción escolar en las zonas de alto conflicto?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 14,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  8 problema de violencia e inseguridad, ya que de su éxito dependen las  condiciones de desarrollo y bienestar de generaciones futuras.21 Respecto al nivel educativo de las víctimas de homicidio, se observa  que alrededor de siete de cada 10 tenía escolaridad básica (primaria y  secundaria); en contraste, en promedio 6.9% de las víctimas había cursado  estudios superiores. Pese a que las personas con menor nivel educativo  presentan un mayor riesgo de ser víctimas de homicidio, la proporción  de personas con escolaridad media superior o superior víctimas de este  tipo de muerte ha aumentado en los últimos años, al pasar de 10.2%  del total de víctimas en 1990, a 26.4% en 2016. Este cambio en la",
+                "coincidencias": 1
+            },
+            {
+                "numero": 2,
+                "pdf": "ensu_2025_septiembre.pdf",
+                "pagina": 21,
+                "texto": "XI. VIOLENCIA EN EL ENTORNO FAMILIAR EN HOGARES    Para los últimos 12 meses —de octubre de 202 4 a septiembre de 202 5—, se estima que en  8.5 % de los hogares en áreas urbanas de interés hubo algún tipo de violencia12en el entorno  familiar. En 23.8 % de las ocasiones, las personas involucradas eran menores de edad    (ver gráfica 16).              1  Incluye las siguientes situaciones: le han ofendido o humillado (por ejemplo, insultos que le hicieron sentir menos o le hicieron sentir mal);  le han corrido de su casa o amenazado con correrlo(a); le han golpeado o agredido físicamente, por ejemplo, pellizcado, jalado el cabello,  empujado, jaloneado, abofeteado, pateado, golpeado con el puño o aventado algún objeto ; le han atacado o agredido con un cuchillo,",
+                "coincidencias": 0
+            },
+            {
+                "numero": 3,
+                "pdf": "onc_delitos_alto_impacto_2025.pdf",
+                "pagina": 63,
+                "texto": "Violación VIOLACIÓN 64NACIONAL",
+                "coincidencias": 0
+            },
+            {
+                "numero": 4,
+                "pdf": "onc_dai_2025_t3.pdf",
+                "pagina": 63,
+                "texto": "Violación VIOLACIÓN 64NACIONAL",
+                "coincidencias": 0
+            },
+            {
+                "numero": 5,
+                "pdf": "onc_dai_2025_t1.pdf",
+                "pagina": 63,
+                "texto": "Violación VIOLACIÓN 64NACIONAL",
+                "coincidencias": 0
+            },
+            {
+                "numero": 6,
+                "pdf": "onc_dai_2025_t2.pdf",
+                "pagina": 63,
+                "texto": "Violación VIOLACIÓN 64NACIONAL",
+                "coincidencias": 0
+            },
+            {
+                "numero": 7,
+                "pdf": "ensu2024.pdf",
+                "pagina": 70,
+                "texto": "71 Consecuencias de los conflictos - Gritos, insultos o groserías Porcentaje de la población de 18 años y más que experimentó gritos, insultos o groserías como  consecuencia de algún conflicto o enfrentamiento durante el primer trimestre de 2024. Demarcaciones territoriales de  la CDMX Índice",
+                "coincidencias": 1
+            },
+            {
+                "numero": 8,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 16,
+                "texto": "uno de los principales medios de homicidio contra estos fue la agresión  por ahorcamiento, estrangulación y sofocación. En promedio, este tipo  de agresión representó 12.4% de los homicidios de niños y 30.9% de  niñas de entre 0 y 17 años; incluso del año 1990 a 2009 fue la principal  causa de homicidio de niñas menores de 11 años (Anexo 1.2). Distribución de homicidios por sexo según causa de la defunción Serie anual de 1990 a 2017 Porcentaje GRÁFICA 1.6 Nota: las claves CIE-9 que se consideraron son  las siguientes: Otros medios: 961X, 9620-9622,  9629; Ahorcamiento, estrangulamiento,  sofocación, ahogamiento y sumersión: 963X y  964X; Objeto cortante o punzante: 966X y  9682; Disparo de arma: 9650-9654. Las claves CIE-10 que se consideran son las",
+                "coincidencias": 0
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.016,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.016,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "impacto",
+                "específico",
+                "tiene",
+                "deserción",
+                "escolar",
+                "zonas",
+                "conflicto"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    },
+    {
+        "id": "Q10",
+        "nivel": "Nivel 3",
+        "fecha_hora": "2026-05-23 00:06:01",
+        "pregunta": "A partir de las conclusiones de los autores en el corpus, ¿qué vacíos de información, subregistros o falta de datos fiables se identifican como el principal obstáculo para medir la violencia real en el país?",
+        "respuesta": "La información proporcionada en el corpus no detalla este aspecto.",
+        "fuentes_recuperadas": [
+            {
+                "numero": 1,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 4,
+                "texto": "de importantes investigaciones en la región que buscan contrastar la  evidencia empírica con las principales teorías y modelos que explican  el fenómeno homicida en diversos contextos. 3  A nivel internacional, los análisis de regiones específicas desde  un enfoque espacial han encontrado evidencia de relaciones entre  homicidios, grupos criminales y drogas, aunque con mecanismos  causales no siempre claros. 4,5,6 También exponen que la violencia  homicida se agrupa espacialmente formando conglomerados que  1 Diversos organismos internacionales señalan que el homicidio es uno de los mejores indicadores para medir la violencia en un país, entre los que  se encuentran United Nations Office on Drugs and Crime. Global study on homicide 2013. (Viena: UNODC: 2014). Organización de los Estados",
+                "coincidencias": 2
+            },
+            {
+                "numero": 2,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 44,
+                "texto": "EN NÚMEROS. DOCUMENTOS DE ANÁLISIS Y ESTADÍSTICAS  38 2.6 Regiones emergentes de homicidios Para explicar el aumento en la tasa nacional de homicidios y detectar  cambios en los patrones geográficos de homicidios (y otros delitos), no  basta con identificar en dónde y qué tan estable es la violencia, o medir  el crecimiento de su magnitud. Para ello, se requiere detectar qué zonas  comienzan a mostrar señales de empeoramiento y con ello, identificar  hacia dónde se está dispersando el problema. 55,56,57 Identificar regiones con problemas emergentes resulta especialmente  relevante para priorizar áreas de prevención y contención.58 Es importante  precisar que las áreas de mayor probabilidad de ocurrencia (regiones  calientes) no son necesariamente las que registran mayores aumentos",
+                "coincidencias": 1
+            },
+            {
+                "numero": 3,
+                "pdf": "onc_dai_2025_t3.pdf",
+                "pagina": 3,
+                "texto": "Presentación 4 El Observatorio Nacional Ciudadano presenta este nuevo análisis trimestral con el objetivo de contribuir a la comprensión clara y objetiva de la violencia que enfrenta México . Más allá de contabilizar delitos, este ejercicio busca identificar tendencias, advertir riesgos y ofrecer evidencia verificable que sirva a la ciudadanía, a los medios de comunicación, a la academia y a quienes toman decisiones públicas . El tercer trimestre de 2025 muestra un escenario complejo . Por un lado, se registran reducciones relevantes en delitos como homicidio doloso, homicidio culposo y secuestro, tanto en la comparación trimestral como anual . La extorsión, aunque presenta descensos moderados, continúa afectando de manera cotidiana a personas y",
+                "coincidencias": 0
+            },
+            {
+                "numero": 4,
+                "pdf": "onc_delitos_alto_impacto_2025.pdf",
+                "pagina": 3,
+                "texto": "Presentación 4 El Observatorio Nacional Ciudadano presenta este nuevo análisis trimestral con la convicción de que contar con datos confiables, claros y comprensibles es indispensable para enfrentar la violencia que afecta a México . Nuestro compromiso es contribuir con evidencia verificable que ayude a la ciudadanía, a los medios, a la academia y a los tomadores de decisiones a mirar la realidad sin adornos ni omisiones . El segundo trimestre de 2025 refleja un país que, pese a cambios institucionales y ajustes en las estrategias, mantiene niveles críticos de violencia . La extorsión continúa golpeando a personas y empresas, y los delitos de género —feminicidio, violación y violencia familiar — recuerdan la deuda histórica con mujeres, niñas y niños .",
+                "coincidencias": 1
+            },
+            {
+                "numero": 5,
+                "pdf": "onc_dai_2025_t2.pdf",
+                "pagina": 3,
+                "texto": "Presentación 4 El Observatorio Nacional Ciudadano presenta este nuevo análisis trimestral con la convicción de que contar con datos confiables, claros y comprensibles es indispensable para enfrentar la violencia que afecta a México . Nuestro compromiso es contribuir con evidencia verificable que ayude a la ciudadanía, a los medios, a la academia y a los tomadores de decisiones a mirar la realidad sin adornos ni omisiones . El segundo trimestre de 2025 refleja un país que, pese a cambios institucionales y ajustes en las estrategias, mantiene niveles críticos de violencia . La extorsión continúa golpeando a personas y empresas, y los delitos de género —feminicidio, violación y violencia familiar — recuerdan la deuda histórica con mujeres, niñas y niños .",
+                "coincidencias": 1
+            },
+            {
+                "numero": 6,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 34,
+                "texto": "miento temporal de los homicidios es estable. Este paso permite dis - tinguir qué regiones son continuamente problemáticas de aquellas que  solamente tienen una influencia temporal y limitada (comportamiento  fluido) en el problema nacional del incremento de homicidios.44 En pocas  palabras, es preciso explorar si dichas concentraciones son persistentes  o inestables en el tiempo. 43 David R amírez-De-Garay, “Las barbas del vecino. Los patrones de difusión del crimen violento en México (1990-2010)”, Foro Internacional 226,  Vol. LVI, No. 4, (2016): 977-1018. 44 Se recomienda restar dos errores estándar a la media, para calcular el coeficiente de variación, a fin de obtener un cálculo más conservador de",
+                "coincidencias": 0
+            },
+            {
+                "numero": 7,
+                "pdf": "patrones_homicidios.pdf",
+                "pagina": 5,
+                "texto": "en los periodos de descenso de homicidios, como el observado desde  la década de los 90 hasta el año 2007. Tampoco abundan los análisis  sobre los comportamientos locales de estabilidad, fluidez y emergencia  de regiones calientes de homicidios, los cuales son fundamentales en  un contexto tan heterogéneo como el mexicano. Además, es escaso lo  analizado respecto a los homicidios que se presentan en poblaciones  vulnerables, como son las de mujeres y la población infantil. El objetivo de este estudio es proporcionar elementos analíticos  que permitan un mayor entendimiento sobre los homicidios en México  durante el período 1990 a 2017, sin inquirir en sus causas. A partir  del análisis de la distribución geográfica y temporal de los homicidios, se",
+                "coincidencias": 1
+            },
+            {
+                "numero": 8,
+                "pdf": "delitos_mexico_inegi.pdf",
+                "pagina": 6,
+                "texto": "y múltiple y patrones y tendencias de los homicidios, 17 este estudio  propone analizar el comportamiento delictivo en el país a través de una  métrica denominada Índice de severidad delictiva que conjunta tanto la  frecuencia de los delitos como el daño que causan.    El primer capítulo presenta los elementos conceptuales que guían  el análisis y propone la operacionalización de daño ocasionado por  el delito a la luz de la duración de las penas en prisión impuestas a  los ofensores. El segundo muestra la incidencia delictiva por entidad  federativa para dar cuenta de la heterogeneidad criminal del país.  En el tercero se expone la metodología y los resultados del índice de  severidad calculado para algunas áreas metropolitanas del país y,",
+                "coincidencias": 0
+            }
+        ],
+        "fuentes_relevantes": [],
+        "metricas": {
+            "latencia_busqueda_faiss_seg": 0.02,
+            "latencia_generacion_llm_seg": 0,
+            "latencia_total_seg": 0.02,
+            "top_k": 8,
+            "chunks_recuperados": 8,
+            "chunks_relevantes": 0,
+            "keywords": [
+                "partir",
+                "conclusiones",
+                "autores",
+                "vacíos",
+                "información",
+                "subregistros",
+                "falta",
+                "fiables",
+                "identifican",
+                "principal",
+                "obstáculo",
+                "medir"
+            ],
+            "modelo_generador": "TinyLlama + LoRA Fine-Tuned",
+            "modo_respuesta": "rechazo_por_falta_de_evidencia"
+        }
+    }
+]
