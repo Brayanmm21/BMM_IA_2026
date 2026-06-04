@@ -7,6 +7,10 @@
 - [Problemas Canibales, Esposos y Ranas](Unidad_1_IA/ProCanEspRan.pdf)
 - [Análisis EDA Unidad 1](Unidad_1_IA/AnálisisEDA_U1.pdf)
 - [Actividad Manual Transformes](Unidad_1_IA/ActividadManualTRANSF.pdf)
+- [Actividad RNN Vanilla Simple](Unidad_1_IA/ActRNNVanilla.pdf)
+- [Actividad Análisis de un Dataset](Unidad_1_IA/AnatomiaAnalisisDataset.pdf)
+- [Actividad Matriz de convolución](Unidad_1_IA/EjercicioConvolucion.png)
+- [Actividad 2: ANATOMÍA DE UNA VANILLA RNN](Unidad_1_IA/EnigmaOraculoSecuencial.pdf)
 
 ### PROYECTOS 
 - [Proyecto 1](Unidad_1_IA/Proyecto1JuegoMono)
